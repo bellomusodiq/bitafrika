@@ -1,0 +1,50 @@
+.Thumbnail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ThumbnailItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 1.4rem 2.8rem;
+  border-radius: 1rem;
+  width: 49%;
+  margin-bottom: 1rem;
+}
+.Title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 0;
+}
+.Text {
+  font-size: 1rem;
+  text-align: center;
+}
+.Image {
+  width: 30%;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 1030px) {
+  .Title {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Title {
+    font-size: 1.5rem;
+  }
+  .Text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Thumbnail {
+    flex-direction: column;
+  }
+  .ThumbnailItem {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+.KeySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+.Image {
+  width: 20%;
+}
+.TextContainer {
+  flex: 0.9;
+}
+.Title {
+  font-size: 3rem;
+  margin: 0;
+}
+.Text {
+  font-size: 1.125rem;
+  width: 70%;
+}
+.BlueText {
+  color: #2356e7;
+}
+@media screen and (max-width: 1030px) {
+  .Title {
+    font-size: 2.5rem;
+  }
+  .Text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Image {
+    width: 30%;
+  }
+  .Title {
+    font-size: 1.8rem;
+  }
+  .Text {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .KeySection {
+    align-items: flex-start;
+  }
+  .Image {
+    width: 30%;
+  }
+  .Title {
+    font-size: 1rem;
+  }
+  .Text {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}

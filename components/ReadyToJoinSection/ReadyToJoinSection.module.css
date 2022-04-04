@@ -1,0 +1,65 @@
+.ReadyToJoinSection {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 4.875rem 4.875rem 2.125rem 3.81rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+.TextContainer {
+  width: 60%;
+}
+.Image {
+  width: 35%;
+}
+.Header {
+  font-size: 3rem;
+  margin: 0;
+}
+.Text {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1030px) {
+  .ReadyToJoinSection {
+    padding: 2.8rem 2.8rem 2rem 2.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ReadyToJoinSection {
+    padding: 2rem 2rem 1.5rem 1.8rem;
+  }
+  .Header {
+    font-size: 1.5rem;
+  }
+  .Text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ReadyToJoinSection {
+    padding: 1.5rem 1.5rem 1rem 1.2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .ReadyToJoinSection > * {
+    width: 100%;
+  }
+  .ButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .Image {
+    width: 70%;
+    margin-left: -25%;
+  }
+  .Header,
+  .Text {
+    text-align: center;
+  }
+  .DownloadContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

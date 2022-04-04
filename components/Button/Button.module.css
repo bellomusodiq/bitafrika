@@ -1,0 +1,20 @@
+.Button {
+  width: 11.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #2356e7;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.StoreButton {
+  /* padding: 0.5rem 1rem; */
+  background-color: white;
+  /* border-radius: 5px; */
+  border: none;
+  cursor: pointer;
+}

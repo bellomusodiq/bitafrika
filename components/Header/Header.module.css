@@ -1,0 +1,43 @@
+.Header {
+  background-color: #ffffff;
+  padding: 1.25rem 7.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+.Nav > a {
+  margin: 0 2rem;
+  font-style: normal;
+  font-weight: 450;
+}
+.NavButton {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .Header {
+    padding: 0.5rem 5%;
+  }
+  .Nav > a {
+    margin: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Nav,
+  .HeaderButton {
+    display: none;
+  }
+  .Header {
+    padding: 0.5rem 2.5%;
+  }
+  .NavButton {
+    display: flex;
+    background-color: white;
+    border: none;
+  }
+  .LogoContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}

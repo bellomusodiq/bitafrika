@@ -1,0 +1,39 @@
+.Backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.SideDrawerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 3;
+  padding: 2rem;
+  transition: 0.4s ease all;
+}
+.SideDrawer {
+  display: flex;
+  flex-direction: column;
+}
+.SideDrawer > a {
+  margin: 0.3rem 0;
+  font-style: normal;
+  font-weight: 450;
+}
+.SideDrawerButton {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .Backdrop,
+  .SideDrawerContainer {
+    display: none;
+  }
+}
