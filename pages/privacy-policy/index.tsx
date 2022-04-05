@@ -90,8 +90,8 @@ const PrivacyPolicy: NextPage = () => {
           think may interest you.
         </p>
         <p className={styles.Text}>
-          <span className={styles.BoldText}>Website:</span> BitAfrika's site,
-          which can be accessed via this URL:{" "}
+          <span className={styles.BoldText}>Website:</span> BitAfrika&apos;s
+          site, which can be accessed via this URL:{" "}
           <a href="https://bitafrika.com">https://bitafrika.com</a>
         </p>
         <p className={styles.Text}>
