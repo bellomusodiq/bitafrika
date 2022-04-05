@@ -22,10 +22,16 @@
 .Text {
   font-size: 1rem;
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
 .Image {
-  width: 30%;
+  width: 50%;
   margin-top: 1.5rem;
+}
+.ButtonContainer {
+  align-self: flex-start;
+  margin-left: 10%;
 }
 @media screen and (max-width: 1030px) {
   .Title {
@@ -38,6 +44,9 @@
   }
   .Text {
     font-size: 0.9rem;
+  }
+  .ButtonContainer {
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 500px) {

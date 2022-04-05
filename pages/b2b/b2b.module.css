@@ -1,0 +1,47 @@
+.Business2Business {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 4.875rem 4.875rem 2.125rem 3.81rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.Image {
+  width: 30%;
+}
+.Header {
+  font-size: 2.25rem;
+}
+.ThumbnailHeader {
+  margin-bottom: -2rem;
+}
+.BlueText {
+  color: #2356e7;
+}
+@media screen and (max-width: 1030px) {
+  .Business2Business {
+    padding: 2.8rem 2.8rem 2rem 2.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Business2Business {
+    padding: 2rem 2rem 1.5rem 1.8rem;
+  }
+  .Header {
+    font-size: 1.5rem;
+  }
+  .ThumbnailHeader {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Business2Business {
+    padding: 1.5rem 1.5rem 1rem 1.2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Image {
+    width: 70%;
+  }
+}

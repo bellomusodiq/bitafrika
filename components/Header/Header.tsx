@@ -20,8 +20,8 @@ const Header: React.FC<IHeader> = ({ toggleSideDrawer }) => (
       />
     </div>
     <nav className={styles.Nav}>
-      <Link href="/">B2B</Link>
-      <Link href="/">Privacy Policy</Link>
+      <Link href="/b2b">B2B</Link>
+      <Link href="/privacy-policy">Privacy Policy</Link>
     </nav>
     <div className={styles.HeaderButton}>
       <Button title="Download" outlined />
