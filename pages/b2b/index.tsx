@@ -20,7 +20,7 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
   },
   {
     title: "Individuals",
-    image: "/images/organizations.png",
+    image: "/images/individuals.png",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
   },
   {
