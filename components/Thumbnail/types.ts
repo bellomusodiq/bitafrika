@@ -6,6 +6,7 @@ export type ThumbnailItemType = {
   showButton?: boolean;
   onButtonClick?: () => void;
   buttonTitle?: string;
+  isSvg?: boolean;
 };
 
 export interface IThumbnail {

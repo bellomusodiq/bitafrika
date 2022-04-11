@@ -2,17 +2,20 @@
   display: flex;
   justify-content: space-between;
   background-color: #f9f9f9;
-  padding: 3rem 3.5rem 0 2.5rem;
+  padding: 3rem 5rem 0 4.2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  transition: 0.3s ease all;
+  overflow-y: hidden;
 }
 .TextContainer {
-  width: 60%;
+  width: 62%;
   align-self: center;
 }
 .Header {
-  font-size: 2.25rem;
+  font-size: 3rem;
   margin: 0;
+  transition: 0.3s ease all;
 }
 .Text {
   font-size: 1.5rem;
@@ -20,9 +23,11 @@
 }
 .ImageContainer {
   width: 25%;
+  transition: 0.3s ease all;
 }
 .GetStartedImage {
   width: 100%;
+  transition: 0.3s ease all;
 }
 @media screen and (max-width: 1030px) {
   .Text {

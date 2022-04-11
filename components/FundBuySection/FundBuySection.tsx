@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import styles from "./FundBuySection.module.css";
 import { IFundBuyItem } from "./types";
@@ -9,18 +9,38 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
   text,
   onButtonClick,
   image,
-}) => (
-  <div className={styles.FundBuyItem}>
-    <div className={styles.TextContainer}>
-      <h4 className={styles.Header}>{title}</h4>
-      <p className={styles.Text}>{text}</p>
+}) => {
+  const [isHover, setIsHover] = useState<boolean>(false);
+  return (
+    <div
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+      className={styles.FundBuyItem}
+      style={{ background: isHover ? "#E4ECFF" : "#F9F9F9" }}
+    >
+      <div className={styles.TextContainer}>
+        <h4
+          style={{ color: isHover ? "#2356E7" : "black" }}
+          className={styles.Header}
+        >
+          {title}
+        </h4>
+        <p className={styles.Text}>{text}</p>
+      </div>
+      <div className={styles.ButtonImageContainer}>
+        <Button isHover={isHover} outlined title="Download" />
+        <img
+          style={{
+            transform: isHover ? "scale(1.5, 1.5)" : "scale(1, 1)",
+          }}
+          src={image}
+          alt={title}
+          className={styles.Image}
+        />
+      </div>
     </div>
-    <div className={styles.ButtonImageContainer}>
-      <Button outlined title="Download" />
-      <img src={image} alt={title} className={styles.Image} />
-    </div>
-  </div>
-);
+  );
+};
 
 const FundBuySection: React.FC = () => {
   return (

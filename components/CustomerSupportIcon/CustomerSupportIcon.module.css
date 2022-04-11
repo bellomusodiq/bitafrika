@@ -1,0 +1,4 @@
+.Svg,
+.Svg * {
+  transition: 0.5s ease all;
+}

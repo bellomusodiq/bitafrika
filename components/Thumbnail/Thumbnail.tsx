@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
+import CustomerSupportIcon from "../CustomerSupportIcon/CustomerSupportIcon";
 import styles from "./Thumbnail.module.css";
 import { IThumbnail, ThumbnailItemType } from "./types";
 
@@ -11,27 +12,64 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
   showButton,
   onButtonClick,
   buttonTitle,
-}) => (
-  <div
-    style={{ backgroundColor: showButton ? "white" : "#F9F9F9" }}
-    className={styles.ThumbnailItem}
-  >
-    <h3 className={styles.Title}>{title}</h3>
-    <p
-      className={styles.Text}
-      style={{ textAlign: showButton ? "left" : "center" }}
+  isSvg,
+}) => {
+  const [isHover, setIsHover] = useState<boolean>(false);
+  return (
+    <div
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+      style={{
+        backgroundColor: showButton
+          ? "white"
+          : !isHover
+          ? "#F9F9F9"
+          : "#2356E7",
+      }}
+      className={styles.ThumbnailItem}
     >
-      {text}
-    </p>
-    {showButton ? (
-      <div className={styles.ButtonContainer}>
-        <Button outlined onClick={onButtonClick} title={buttonTitle} />
-      </div>
-    ) : (
-      <img src={image} alt={String(title)} className={styles.Image} />
-    )}
-  </div>
-);
+      <h3
+        style={{ color: isHover ? "white" : "black" }}
+        className={styles.Title}
+      >
+        {title}
+      </h3>
+      <p
+        className={styles.Text}
+        style={{
+          textAlign: showButton ? "left" : "center",
+          color: isHover ? "white" : "black",
+        }}
+      >
+        {text}
+      </p>
+      {showButton ? (
+        <div className={styles.ButtonContainer}>
+          <Button
+            outlined
+            isHover={isHover}
+            onClick={onButtonClick}
+            title={buttonTitle}
+          />
+        </div>
+      ) : !isSvg ? (
+        <img
+          src={image}
+          style={{
+            transform: isHover ? "scale(1.5, 1.5)" : "scale(1, 1)",
+          }}
+          alt={String(title)}
+          className={styles.Image}
+        />
+      ) : (
+        <CustomerSupportIcon
+          isHover={isHover}
+          color={isHover ? "white" : "#2356E7"}
+        />
+      )}
+    </div>
+  );
+};
 
 const Thumbnail: React.FC<IThumbnail> = ({ items }) => {
   return (
@@ -45,6 +83,7 @@ const Thumbnail: React.FC<IThumbnail> = ({ items }) => {
           showButton={item.showButton}
           buttonTitle={item.buttonTitle}
           onButtonClick={item.onButtonClick}
+          isSvg={item.isSvg}
         />
       ))}
     </section>

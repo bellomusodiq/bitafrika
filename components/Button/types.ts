@@ -3,4 +3,5 @@ export interface IButton {
   title?: string;
   outlined?: boolean;
   store?: "apple" | "google";
+  isHover?: boolean;
 }
