@@ -31,7 +31,7 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
         <Button isHover={isHover} outlined title="Download" />
         <img
           style={{
-            transform: isHover ? "scale(1.5, 1.5)" : "scale(1, 1)",
+            transform: isHover ? "scale(1.3, 1.3)" : "scale(1, 1)",
           }}
           src={image}
           alt={title}

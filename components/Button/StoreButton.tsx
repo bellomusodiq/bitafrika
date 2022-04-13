@@ -5,8 +5,14 @@ import React from "react";
 import styles from "./Button.module.css";
 import { IButton } from "./types";
 
-const StoreButton: React.FC<IButton> = ({ onClick, store }) => (
-  <button onClick={onClick} className={styles.StoreButton}>
+const StoreButton: React.FC<IButton> = ({ onClick, store, isHover }) => (
+  <button
+    style={{
+      backgroundColor: isHover ? "#2356E7" : "white",
+    }}
+    onClick={onClick}
+    className={styles.StoreButton}
+  >
     <img
       className={styles.StoreImage}
       src={

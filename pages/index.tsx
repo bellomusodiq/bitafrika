@@ -23,6 +23,7 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     title: "Easy and convenient",
     text: "Navigate around the app with ease and perform your transactions without hassle",
     image: "/images/easy.png",
+    imageFull: true,
   },
   {
     id: "2",

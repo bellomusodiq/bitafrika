@@ -7,12 +7,14 @@ import { IThumbnail, ThumbnailItemType } from "./types";
 
 const ThumbnailItem: React.FC<ThumbnailItemType> = ({
   title,
+  customTitle,
   text,
   image,
   showButton,
   onButtonClick,
   buttonTitle,
   isSvg,
+  imageFull,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
@@ -25,20 +27,25 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
           : !isHover
           ? "#F9F9F9"
           : "#2356E7",
+        position: imageFull ? "relative" : "inherit",
       }}
       className={styles.ThumbnailItem}
     >
-      <h3
-        style={{ color: isHover ? "white" : "black" }}
-        className={styles.Title}
-      >
-        {title}
-      </h3>
+      {customTitle ? (
+        title
+      ) : (
+        <h3
+          style={{ color: isHover ? "white" : "black" }}
+          className={styles.Title}
+        >
+          {title}
+        </h3>
+      )}
       <p
         className={styles.Text}
         style={{
           textAlign: showButton ? "left" : "center",
-          color: isHover ? "white" : "black",
+          color: isHover && !showButton ? "white" : "black",
         }}
       >
         {text}
@@ -57,6 +64,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
           src={image}
           style={{
             transform: isHover ? "scale(1.5, 1.5)" : "scale(1, 1)",
+            marginBottom: imageFull ? "-5%" : 0,
           }}
           alt={String(title)}
           className={styles.Image}
@@ -84,6 +92,8 @@ const Thumbnail: React.FC<IThumbnail> = ({ items }) => {
           buttonTitle={item.buttonTitle}
           onButtonClick={item.onButtonClick}
           isSvg={item.isSvg}
+          imageFull={item.imageFull}
+          customTitle={item.customTitle}
         />
       ))}
     </section>

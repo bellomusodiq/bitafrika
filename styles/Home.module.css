@@ -71,13 +71,24 @@
 .SendingText {
   font-size: 3rem;
   text-align: center;
-  width: 60%;
+  width: 80%;
   margin: auto;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 1030px) {
+  .LeftCoins,
+  .RightCoins {
+    width: 20%;
+    height: 25vh;
+  }
+  .PhoneBanner {
+    width: 50%;
+  }
   .IntroText {
-    width: 60%;
+    width: 70%;
+  }
+  .Header {
+    width: 100%;
   }
   .DownloadButtons {
     margin-bottom: 4rem;
@@ -86,7 +97,7 @@
     font-size: 1.5rem;
   }
   .SendingText {
-    width: 55%;
+    width: 70%;
     font-size: 2rem;
   }
 }

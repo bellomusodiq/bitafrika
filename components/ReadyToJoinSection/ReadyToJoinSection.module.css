@@ -2,16 +2,21 @@
   display: flex;
   justify-content: space-between;
   background-color: #f9f9f9;
-  padding: 4.875rem 4.875rem 2.125rem 3.81rem;
+  padding: 4.875rem 4.875rem 4.875rem 3.81rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
   align-items: flex-start;
+  transition: 0.4s ease all;
+  overflow: hidden;
+  position: relative;
 }
 .TextContainer {
   width: 60%;
+  transition: 0.4s ease all;
 }
 .Image {
   width: 35%;
+  transition: 0.4s ease all;
 }
 .Header {
   font-size: 3rem;
@@ -19,6 +24,12 @@
 }
 .Text {
   font-size: 1rem;
+  margin: 2rem 0;
+}
+.Logo {
+  position: absolute;
+  right: 15%;
+  transition: 0.4s ease all;
 }
 @media screen and (max-width: 1030px) {
   .ReadyToJoinSection {

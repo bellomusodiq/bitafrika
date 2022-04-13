@@ -1,16 +1,38 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
-import React from "react";
+import React, { useState } from "react";
 import PageLayout from "../../templates/PageLayout/PageLayout";
 import styles from "./privacy-policy.module.css";
 
 const PrivacyPolicy: NextPage = () => {
+  const [isHover, setIsHover] = useState<boolean>(false);
+
   return (
     <PageLayout>
-      <section className={styles.PrivacyPolicy}>
-        <h1 className={styles.Header}>Privacy Policy</h1>
-        <img src="/images/document.png" className={styles.Image} />
+      <section
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+        className={styles.PrivacyPolicy}
+        style={{ backgroundColor: isHover ? "#2356E7" : "#F9F9F9" }}
+      >
+        <h1
+          style={{
+            color: !isHover ? "black" : "white",
+          }}
+          className={styles.Header}
+        >
+          Privacy Policy
+        </h1>
+        <img
+          src="/images/document.png"
+          className={styles.Image}
+          style={{
+            transform: isHover
+              ? "scale(1.5, 1.5) translate(0, 10%)"
+              : "scale(1, 1) translate(0, 0)",
+          }}
+        />
       </section>
       <article className={styles.Article}>
         <h3 className={styles.Title}>Privacy Policy</h3>

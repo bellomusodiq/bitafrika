@@ -13,6 +13,7 @@
   border-radius: 1rem;
   width: 48.5%;
   justify-content: space-between;
+  overflow: hidden;
 }
 .ButtonImageContainer {
   display: flex;
@@ -20,7 +21,7 @@
   align-items: flex-end;
 }
 .Image {
-  width: 30%;
+  height: 100%;
   transition: 0.8s ease all;
 }
 .Header {
@@ -51,7 +52,7 @@
     align-items: center;
   }
   .Image {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 500px) {

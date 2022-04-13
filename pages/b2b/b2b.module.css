@@ -6,12 +6,16 @@
   padding: 4.875rem 4.875rem 2.125rem 3.81rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  transition: 0.4s ease all;
+  overflow: hidden;
 }
 .Image {
   width: 30%;
+  transition: 0.4s ease all;
 }
 .Header {
   font-size: 2.25rem;
+  transition: 0.4s ease all;
 }
 .ThumbnailHeader {
   margin-bottom: -2rem;

@@ -7,7 +7,7 @@ const CustomerSupportIcon: React.FC<{ color: string; isHover: boolean }> = ({
 }) => (
   <svg
     width="226"
-    height="182"
+    height="50%"
     viewBox="0 0 226 182"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
