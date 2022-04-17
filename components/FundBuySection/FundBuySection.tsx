@@ -16,19 +16,24 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       className={styles.FundBuyItem}
-      style={{ background: isHover ? "#E4ECFF" : "#F9F9F9" }}
+      style={{ background: isHover ? "#2356E7" : "#F9F9F9" }}
     >
       <div className={styles.TextContainer}>
         <h4
-          style={{ color: isHover ? "#2356E7" : "black" }}
+          style={{ color: isHover ? "white" : "black" }}
           className={styles.Header}
         >
           {title}
         </h4>
-        <p className={styles.Text}>{text}</p>
+        <p
+          style={{ color: isHover ? "white" : "black" }}
+          className={styles.Text}
+        >
+          {text}
+        </p>
       </div>
       <div className={styles.ButtonImageContainer}>
-        <Button isHover={isHover} outlined title="Download" />
+        <Button outlined title="Download" />
         <img
           style={{
             transform: isHover ? "scale(1.3, 1.3)" : "scale(1, 1)",

@@ -20,6 +20,7 @@
 .Text {
   font-size: 1.5rem;
   width: 65%;
+  transition: 0.3s ease all;
 }
 .ImageContainer {
   width: 25%;

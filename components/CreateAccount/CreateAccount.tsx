@@ -11,22 +11,25 @@ const CreateAccount: React.FC = () => {
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       className={styles.CreateAccount}
-      style={{ background: isHover ? "#E4ECFF" : "#F9F9F9" }}
+      style={{ background: isHover ? "#2356E7" : "#F9F9F9" }}
     >
       <div className={styles.TextContainer}>
         <h4
           className={styles.Header}
-          style={{ color: isHover ? "#2356E7" : "black" }}
+          style={{ color: isHover ? "white" : "black" }}
         >
           Create an account
         </h4>
-        <p className={styles.Text}>
+        <p
+          style={{ color: isHover ? "white" : "black" }}
+          className={styles.Text}
+        >
           {
             "Sign up for an account on our mobile apps for Android and iOS with your basic info. It's that easy"
           }
         </p>
         <div className={styles.ButtonContainer}>
-          <Button isHover={isHover} outlined title="Download" />
+          <Button outlined title="Download" />
         </div>
       </div>
       <div className={styles.ImageContainer}>
