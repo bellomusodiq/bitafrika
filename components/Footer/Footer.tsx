@@ -66,6 +66,7 @@ const Footer: React.FC = () => (
       <div className={styles.Logo}>
         <Image src="/icons/logo-white.svg" alt="logo" width={120} height={30} />
       </div>
+      <div />
       {Object.keys(FOOTER_LINKS).map((linkTitle: string) => (
         <FooterItem
           title={linkTitle}

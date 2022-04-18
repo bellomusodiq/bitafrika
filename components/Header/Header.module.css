@@ -29,6 +29,7 @@
   }
   .Header {
     padding: 0.5rem 2.5%;
+    margin-bottom: 3rem;
   }
   .NavButton {
     display: flex;
@@ -38,6 +39,6 @@
   .LogoContainer {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }

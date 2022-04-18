@@ -63,6 +63,7 @@
   }
   .ThumbnailItem {
     width: 100%;
+    align-items: center;
   }
   .Title {
     width: 100%;
@@ -71,5 +72,12 @@
   .Text {
     margin-bottom: 2rem;
     width: 100%;
+    text-align: center !important;
+  }
+  .ButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
   }
 }

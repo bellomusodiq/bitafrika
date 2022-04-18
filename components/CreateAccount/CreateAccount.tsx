@@ -31,6 +31,9 @@ const CreateAccount: React.FC = () => {
         <div className={styles.ButtonContainer}>
           <Button outlined title="Download" />
         </div>
+        <div className={styles.ButtonContainerMobile}>
+          <Button title="Download" />
+        </div>
       </div>
       <div className={styles.ImageContainer}>
         <img

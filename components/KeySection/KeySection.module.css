@@ -22,6 +22,9 @@
 .BlueText {
   color: #2356e7;
 }
+.KeySectionMobile {
+  display: none;
+}
 @media screen and (max-width: 1030px) {
   .Title {
     font-size: 2.5rem;
@@ -43,16 +46,25 @@
 }
 @media screen and (max-width: 500px) {
   .KeySection {
-    align-items: flex-start;
+    display: none;
   }
-  .Image {
-    width: 30%;
+  .KeySectionMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
   }
-  .Title {
-    font-size: 1rem;
+  .ImageMobile {
+    width: 60%;
   }
-  .Text {
+  .TitleMobile {
+    font-size: 1.5rem;
+    text-align: center;
     width: 100%;
-    font-size: 0.8rem;
+  }
+  .TextMobile {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
   }
 }

@@ -49,14 +49,21 @@
 }
 @media screen and (max-width: 500px) {
   .CreateAccount {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    padding: 0;
+    background-color: white !important;
   }
   .CreateAccount > div {
     width: 100%;
   }
   .TextContainer {
     margin-bottom: 2rem;
+  }
+  .ImageContainer {
+    padding: 3rem 5rem 0px;
+    background-color: rgba(35, 86, 231, 0.1);
+    margin-bottom: 1.5rem;
   }
   .Header {
     font-size: 1.5rem;
@@ -67,6 +74,11 @@
     text-align: center;
   }
   .ButtonContainer {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .ButtonContainerMobile {
     display: flex;
     justify-content: center;
   }

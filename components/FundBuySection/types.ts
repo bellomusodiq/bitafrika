@@ -3,4 +3,8 @@ export interface IFundBuyItem {
   text: string;
   onButtonClick?: () => void;
   image: string;
+  backgroundColor?: string;
+  color?: string;
+  centerText?: boolean;
+  buttonType?: string;
 }

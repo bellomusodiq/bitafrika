@@ -45,10 +45,47 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     image: "/images/money-transfer.png",
   },
 ];
+const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
+  {
+    id: "1",
+    title: "Easy and convenient",
+    text: "Navigate around the app with ease and perform your transactions without hassle",
+    image: "/images/easy.png",
+    imageFull: true,
+    backgroundColor: "#2356E7",
+    color: "white",
+  },
+  {
+    id: "2",
+    title: "Safe & Secure",
+    text: "Our platform is securely enveloped with end to end encryption",
+    image: "/images/locked.png",
+    backgroundColor: "rgba(35, 86, 231, 0.1)",
+    color: "black",
+  },
+  {
+    id: "3",
+    title: "Great customer support",
+    text: "Having trouble with transactions or operation, our support team are on group to aid you",
+    isSvg: true,
+    // image: "/images/colaboration.png",
+    backgroundColor: "#2356E7",
+    color: "white",
+  },
+  {
+    id: "4",
+    title: "Simple and fast withdrawals",
+    text: "We do not delay payment as we understand how brisk withdrawals gives our users joy",
+    image: "/images/money-transfer.png",
+    backgroundColor: "rgba(35, 86, 231, 0.1)",
+    color: "black",
+  },
+];
 
 const Home: NextPage = () => {
   const [isHover, setIsHover] = useState<boolean>(false);
   const [choiceIndex, setChoiceIndex] = useState<number>(0);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,6 +96,18 @@ const Home: NextPage = () => {
     }, 1000);
     return () => clearInterval(interval);
   }, [choiceIndex]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        return setIsMobile(true);
+      }
+      setIsMobile(false);
+    };
+    if (window) window.addEventListener("resize", handleResize);
+
+    return () => window && window.removeEventListener("resize", handleResize);
+  });
 
   return (
     <>
@@ -81,7 +130,7 @@ const Home: NextPage = () => {
           <img
             className={styles.LeftCoins}
             alt="left coin"
-            src="/images/left-coins.png"
+            src={`/images/left-coins${isMobile ? "-mobile" : ""}.png`}
           />
           <img
             src="/images/phone-banner.png"
@@ -98,7 +147,7 @@ const Home: NextPage = () => {
           <img
             className={styles.RightCoins}
             alt="left coin"
-            src="/images/right-coins.png"
+            src={`/images/right-coins${isMobile ? "-mobile" : ""}.png`}
           />
         </section>
         <section className={styles.IntroText}>
@@ -130,7 +179,12 @@ const Home: NextPage = () => {
           Why you should choose{" "}
           <span className={styles.BlueText}>BitAfrika</span>
         </h3>
-        <Thumbnail items={THUMBNAIL_DATA} />
+        <div className={styles.ThumbnailContainer}>
+          <Thumbnail items={THUMBNAIL_DATA} />
+        </div>
+        <div className={styles.ThumbnailContainerMobile}>
+          <Thumbnail items={THUMBNAIL_DATA_MOBILE} />
+        </div>
         <h3 className={styles.SendingText} style={{ marginTop: "1.5rem" }}>
           Sending and recieving cryptocurrency seamlessly in a smarter way
         </h3>

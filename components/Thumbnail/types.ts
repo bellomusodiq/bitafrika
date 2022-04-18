@@ -9,6 +9,8 @@ export type ThumbnailItemType = {
   buttonTitle?: string;
   isSvg?: boolean;
   imageFull?: boolean;
+  backgroundColor?: string;
+  color?: string;
 };
 
 export interface IThumbnail {

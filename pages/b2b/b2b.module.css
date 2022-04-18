@@ -23,6 +23,9 @@
 .BlueText {
   color: #2356e7;
 }
+.ThumbnailContainerMobile {
+  display: none;
+}
 @media screen and (max-width: 1030px) {
   .Business2Business {
     padding: 2.8rem 2.8rem 2rem 2.5rem;
@@ -44,8 +47,19 @@
     padding: 1.5rem 1.5rem 1rem 1.2rem;
     flex-direction: column-reverse;
     align-items: center;
+    background-color: rgba(35, 86, 231, 0.1) !important;
   }
   .Image {
     width: 70%;
+  }
+  .ThumbnailContainerMobile {
+    display: block;
+  }
+  .ThumbnailContainer {
+    display: none;
+  }
+  .ThumbnailHeader {
+    text-align: center;
+    font-size: 1.5rem;
   }
 }

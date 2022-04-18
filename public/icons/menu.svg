@@ -1,5 +1,5 @@
-<svg width="31" height="23" viewBox="0 0 31 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="4" y="4" width="23" height="3" fill="black"/>
-<rect x="4" y="10" width="17" height="3" fill="black"/>
-<rect x="4" y="16" width="13" height="3" fill="black"/>
+<svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.62549 10.2975H28.9139" stroke="black" stroke-width="4.04807" stroke-linecap="round"/>
+<path d="M12.7217 17.0443H28.9139" stroke="black" stroke-width="4.04807" stroke-linecap="round"/>
+<path d="M18.1191 23.7911L28.914 23.7911" stroke="black" stroke-width="4.04807" stroke-linecap="round"/>
 </svg>

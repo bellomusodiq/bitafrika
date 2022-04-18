@@ -15,6 +15,8 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
   buttonTitle,
   isSvg,
   imageFull,
+  backgroundColor,
+  color,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
@@ -24,6 +26,8 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
       style={{
         backgroundColor: showButton
           ? "white"
+          : backgroundColor
+          ? backgroundColor
           : !isHover
           ? "#F9F9F9"
           : "#2356E7",
@@ -35,7 +39,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
         title
       ) : (
         <h3
-          style={{ color: isHover ? "white" : "black" }}
+          style={{ color: color ? color : isHover ? "white" : "black" }}
           className={styles.Title}
         >
           {title}
@@ -45,7 +49,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
         className={styles.Text}
         style={{
           textAlign: showButton ? "left" : "center",
-          color: isHover && !showButton ? "white" : "black",
+          color: color ? color : isHover && !showButton ? "white" : "black",
         }}
       >
         {text}
@@ -94,6 +98,8 @@ const Thumbnail: React.FC<IThumbnail> = ({ items }) => {
           isSvg={item.isSvg}
           imageFull={item.imageFull}
           customTitle={item.customTitle}
+          backgroundColor={item.backgroundColor}
+          color={item.color}
         />
       ))}
     </section>

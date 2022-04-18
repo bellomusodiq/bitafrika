@@ -5,6 +5,9 @@
   transition: 0.8s ease all;
   overflow: hidden;
 }
+.FundBuySectionMobile {
+  display: none;
+}
 .FundBuyItem {
   display: flex;
   flex-direction: column;
@@ -34,6 +37,12 @@
   font-size: 1.125rem;
   transition: 0.8s ease all;
 }
+.ButtonContainerMobile {
+  display: none;
+}
+.ThumbnailContainerMobile {
+  display: none;
+}
 @media screen and (max-width: 1030px) {
   .Header {
     font-size: 1.75rem;
@@ -58,10 +67,26 @@
 }
 @media screen and (max-width: 500px) {
   .FundBuySection {
+    display: none;
+  }
+  .FundBuySectionMobile {
+    display: flex;
     flex-direction: column;
   }
   .FundBuyItem {
     width: 100%;
     margin-bottom: 1.5rem;
+    padding: 2rem 1.2rem 0 0rem;
+  }
+  .ButtonContainer {
+    display: none;
+  }
+  .ButtonContainerMobile {
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: 5rem;
+  }
+  .Image {
+    margin-bottom: 1rem;
   }
 }

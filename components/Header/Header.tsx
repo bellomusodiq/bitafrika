@@ -7,9 +7,6 @@ import { IHeader } from "./types";
 
 const Header: React.FC<IHeader> = ({ toggleSideDrawer }) => (
   <header className={styles.Header}>
-    <button onClick={toggleSideDrawer} className={styles.NavButton}>
-      <Image src="/icons/menu.svg" alt="menu button" width={35} height={35} />
-    </button>
     <div className={styles.LogoContainer}>
       <Image
         alt="logo"
@@ -19,6 +16,9 @@ const Header: React.FC<IHeader> = ({ toggleSideDrawer }) => (
         className={styles.Logo}
       />
     </div>
+    <button onClick={toggleSideDrawer} className={styles.NavButton}>
+      <Image src="/icons/menu.svg" alt="menu button" width={35} height={35} />
+    </button>
     <nav className={styles.Nav}>
       <Link href="/b2b">B2B</Link>
       <Link href="/privacy-policy">Privacy Policy</Link>

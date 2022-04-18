@@ -49,14 +49,21 @@
 }
 @media screen and (max-width: 500px) {
   .Footer {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .Footer > * {
-    width: 100%;
+    width: 48%;
   }
   .Logo {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+  }
+  .FooterText {
+    text-align: left;
+  }
+  .RightText {
+    text-align: left;
   }
 }

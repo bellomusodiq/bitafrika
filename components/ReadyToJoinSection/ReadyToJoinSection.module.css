@@ -31,6 +31,9 @@
   right: 15%;
   transition: 0.4s ease all;
 }
+.DownloadContainerMobile {
+  display: none;
+}
 @media screen and (max-width: 1030px) {
   .ReadyToJoinSection {
     padding: 2.8rem 2.8rem 2rem 2.5rem;
@@ -50,8 +53,9 @@
 @media screen and (max-width: 500px) {
   .ReadyToJoinSection {
     padding: 1.5rem 1.5rem 1rem 1.2rem;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
+    background-color: #2356e7 !important;
   }
   .ReadyToJoinSection > * {
     width: 100%;
@@ -61,16 +65,25 @@
     justify-content: center;
   }
   .Image {
-    width: 70%;
+    width: 100%;
     margin-left: -25%;
+    margin-bottom: -20%;
+    margin-top: 10%;
   }
   .Header,
   .Text {
     text-align: center;
   }
   .DownloadContainer {
+    display: none;
+  }
+  .DownloadContainerMobile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
+  }
+  .TextContainer {
+    color: white !important;
   }
 }

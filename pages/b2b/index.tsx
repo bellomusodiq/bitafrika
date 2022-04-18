@@ -39,6 +39,44 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
   },
 ];
 
+const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
+  {
+    id: "1",
+    title: "Organizations",
+    image: "/images/organizations.png",
+    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    backgroundColor: "#2356E7",
+    color: "white",
+  },
+  {
+    id: "2",
+    title: "Businesses",
+    image: "/images/businesses.png",
+    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    backgroundColor: "rgba(35, 86, 231, 0.1)",
+    color: "black",
+  },
+  {
+    id: "3",
+    title: "Individuals",
+    image: "/images/individuals.png",
+    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    backgroundColor: "#2356E7",
+    color: "white",
+  },
+  {
+    title: (
+      <h3 className={styles.ThumbnailHeader}>
+        Are you <span className={styles.BlueText}>Ready?</span>
+      </h3>
+    ),
+    customTitle: true,
+    showButton: true,
+    buttonTitle: "Get Started with B2B",
+    text: "Are you an organisation, business or individual looking to trade over the counter (OTC) / bulk crypto ? Please click get started below to fill a short questionnaire ",
+  },
+];
+
 const B2B: NextPage = () => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
@@ -67,7 +105,12 @@ const B2B: NextPage = () => {
           }}
         />
       </section>
-      <Thumbnail items={THUMBNAIL_DATA} />
+      <div className={styles.ThumbnailContainer}>
+        <Thumbnail items={THUMBNAIL_DATA} />
+      </div>
+      <div className={styles.ThumbnailContainerMobile}>
+        <Thumbnail items={THUMBNAIL_DATA_MOBILE} />
+      </div>
     </PageLayout>
   );
 };

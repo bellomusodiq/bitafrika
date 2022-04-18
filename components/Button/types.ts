@@ -4,4 +4,5 @@ export interface IButton {
   outlined?: boolean;
   store?: "apple" | "google";
   isHover?: boolean;
+  stretch?: boolean;
 }

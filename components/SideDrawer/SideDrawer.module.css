@@ -11,24 +11,38 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 70vw;
-  height: 100vh;
+  width: 100vw;
+  height: fit-content;
   background-color: white;
   z-index: 3;
   padding: 2rem;
   transition: 0.4s ease all;
+  border-radius: 10px;
 }
-.SideDrawer {
+.SideDrawer,
+.LinkContainerActive,
+.LinkContainer {
   display: flex;
   flex-direction: column;
 }
-.SideDrawer > a {
+.LinkContainer > a,
+.LinkContainerActive > a {
   margin: 0.3rem 0;
   font-style: normal;
   font-weight: 450;
+  text-align: center;
+}
+.LinkContainerActive > a {
+  color: #2356e7;
 }
 .SideDrawerButton {
   margin-top: 2rem;
+}
+.Divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 500px) {

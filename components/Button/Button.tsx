@@ -2,7 +2,13 @@ import React, { useMemo } from "react";
 import styles from "./Button.module.css";
 import { IButton } from "./types";
 
-const Button: React.FC<IButton> = ({ title, onClick, outlined, isHover }) => {
+const Button: React.FC<IButton> = ({
+  title,
+  onClick,
+  outlined,
+  isHover,
+  stretch,
+}) => {
   const { backgroundColor, color } = useMemo(() => {
     let backgroundColor = "#FFFFFF";
     let color = "#2356E7";
@@ -22,6 +28,7 @@ const Button: React.FC<IButton> = ({ title, onClick, outlined, isHover }) => {
       style={{
         backgroundColor,
         color,
+        width: stretch ? "100%" : "11.5rem",
       }}
       onClick={onClick}
     >
