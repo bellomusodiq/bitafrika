@@ -20,9 +20,10 @@ const TransactionSection: React.FC = () => {
       >
         <h4 className={styles.Title}>Borderless Transactions</h4>
         <p className={styles.Text}>
-          Send and receive bitcoin from friends and family anywhere in the world
-          in seconds. No cross-border control and fees. Storage is secure and
-          free. No payment limits; no maximum daily or monthly amounts.
+          Send and receive cryptocurrency from friends and family anywhere in
+          the world in seconds. No cross-border control and fees. Storage is
+          secure and free. No payment limits; no maximum daily or monthly
+          amounts.
         </p>
         <div className={styles.ButtonContainer}>
           <Button isHover={isHover} title="Download" />

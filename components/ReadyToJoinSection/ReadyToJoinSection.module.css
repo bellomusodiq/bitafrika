@@ -74,6 +74,9 @@
   .Text {
     text-align: center;
   }
+  .Text {
+    line-height: 1.5rem;
+  }
   .DownloadContainer {
     display: none;
   }

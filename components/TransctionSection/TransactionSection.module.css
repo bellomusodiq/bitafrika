@@ -62,4 +62,7 @@
   .Image {
     width: 70%;
   }
+  .Text {
+    line-height: 1.5rem;
+  }
 }

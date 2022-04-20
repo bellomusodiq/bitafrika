@@ -151,13 +151,14 @@
   }
   .SubHeader {
     width: 100%;
+    font-size: 0.9rem;
   }
   .GetStarted {
     font-size: 1.2rem;
   }
   .SendingText {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 3rem;
   }
   .LeftCoins,
