@@ -75,6 +75,9 @@
   margin: auto;
   margin-bottom: 2rem;
 }
+.ScrollContainer {
+  display: none;
+}
 @media screen and (max-width: 1030px) {
   .LeftCoins,
   .RightCoins {
@@ -180,5 +183,9 @@
   }
   .ThumbnailContainer {
     display: none;
+  }
+  .ScrollContainer {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -168,8 +168,13 @@ const Home: NextPage = () => {
           <StoreButton store="apple" />
           <StoreButton store="google" />
         </section>
+        <div className={styles.ScrollContainer}>
+          <a href="#SendingText">
+            <img src="/icons/arrow-down.svg" alt="arrow down" />
+          </a>
+        </div>
         <h3 className={styles.GetStarted}>How to get started</h3>
-        <h3 className={styles.SendingText}>
+        <h3 id="SendingText" className={styles.SendingText}>
           Sending and recieving cryptocurrency in a smarter way
         </h3>
         <CreateAccount />
