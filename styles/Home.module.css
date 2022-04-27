@@ -12,6 +12,7 @@
   padding: 0 10%;
   padding-top: 10vh;
   margin-bottom: -4vh;
+  /* padding-bottom: 12vh; */
 }
 .PhoneBanner {
   transition: 0.4s ease all;
@@ -37,7 +38,7 @@
   margin: auto;
 }
 .IntroText {
-  width: 45%;
+  width: 55%;
   margin: auto;
 }
 .Header {
