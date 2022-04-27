@@ -35,8 +35,8 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     id: "3",
     title: "Great customer support",
     text: "Having trouble with transactions or operation, our support team are on group to aid you",
-    isSvg: true,
-    // image: "/images/colaboration.png",
+    // isSvg: true,
+    image: "/images/customer-support.png",
   },
   {
     id: "4",
@@ -117,9 +117,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <PageLayout>
-        <section className={styles.Banner}>
-          {/* <Image
+      <PageLayout
+        heroSection={
+          <section className={styles.Banner}>
+            {/* <Image
             src="/images/background.png"
             alt="background image"
             // className={styles.BackgroundImage}
@@ -127,29 +128,31 @@ const Home: NextPage = () => {
             width={"100%"}
             height="80vh"
           /> */}
-          <img
-            className={styles.LeftCoins}
-            alt="left coin"
-            src={`/images/left-coins${isMobile ? "-mobile" : ""}.png`}
-          />
-          <img
-            src="/images/phone-banner.png"
-            alt="bitafika phone image"
-            className={styles.PhoneBanner}
-            style={{
-              transform: isHover
-                ? "scale(1.2,1.2) translateY(-5%)"
-                : "scale(1, 1) translateY(0)",
-            }}
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-          />
-          <img
-            className={styles.RightCoins}
-            alt="left coin"
-            src={`/images/right-coins${isMobile ? "-mobile" : ""}.png`}
-          />
-        </section>
+            <img
+              className={styles.LeftCoins}
+              alt="left coin"
+              src={`/images/left-coins${isMobile ? "-mobile" : ""}.png`}
+            />
+            <img
+              src="/images/phone-banner.png"
+              alt="bitafika phone image"
+              className={styles.PhoneBanner}
+              style={{
+                transform: isHover
+                  ? "scale(1.2,1.2) translateY(-5%)"
+                  : "scale(1, 1) translateY(0)",
+              }}
+              onMouseEnter={() => setIsHover(true)}
+              onMouseLeave={() => setIsHover(false)}
+            />
+            <img
+              className={styles.RightCoins}
+              alt="left coin"
+              src={`/images/right-coins${isMobile ? "-mobile" : ""}.png`}
+            />
+          </section>
+        }
+      >
         <section className={styles.IntroText}>
           <h1 className={styles.Header}>
             The{" "}

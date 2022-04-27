@@ -5,7 +5,7 @@ import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import styles from "./PageLayout.module.css";
 import { PageLayoutProps } from "./types";
 
-const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
+const PageLayout: React.FC<PageLayoutProps> = ({ children, heroSection }) => {
   const [openSideDrawer, setOpenSideDrawer] = useState<boolean>(false);
 
   const toggleSideDrawer = () => {
@@ -16,6 +16,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
     <>
       <SideDrawer closeSideDrawer={toggleSideDrawer} open={openSideDrawer} />
       <Header toggleSideDrawer={toggleSideDrawer} />
+      {heroSection}
       <main className={styles.PageLayout}>{children}</main>
       <Footer />
     </>

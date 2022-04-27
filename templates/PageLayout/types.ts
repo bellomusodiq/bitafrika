@@ -1,1 +1,3 @@
-export interface PageLayoutProps {}
+export interface PageLayoutProps {
+  heroSection?: JSX.Element;
+}
