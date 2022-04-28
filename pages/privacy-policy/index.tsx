@@ -11,7 +11,7 @@ const PrivacyPolicy: NextPage = () => {
   return (
     <PageLayout>
       <section
-        onMouseEnter={() => setIsHover(true)}
+        // onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
         className={styles.PrivacyPolicy}
         style={{ backgroundColor: isHover ? "#2356E7" : "#F9F9F9" }}

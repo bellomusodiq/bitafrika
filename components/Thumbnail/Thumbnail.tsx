@@ -21,7 +21,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
     <div
-      onMouseEnter={() => setIsHover(true)}
+      // onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       style={{
         backgroundColor: showButton

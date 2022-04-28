@@ -8,7 +8,7 @@ const ReadyToJoinSection: React.FC = () => {
   return (
     <>
       <section
-        onMouseEnter={() => setIsHover(true)}
+        // onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
         className={styles.ReadyToJoinSection}
         style={{

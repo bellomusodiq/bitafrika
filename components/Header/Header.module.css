@@ -14,6 +14,9 @@
 .NavButton {
   display: none;
 }
+.LogoContainer img {
+  cursor: pointer;
+}
 @media screen and (max-width: 800px) {
   .Header {
     padding: 0.5rem 5%;
