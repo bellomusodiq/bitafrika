@@ -44,6 +44,7 @@
 .Header {
   text-align: center;
   font-size: 3rem;
+  margin-top: -5vh;
 }
 .BlueText {
   color: #2356e7;
@@ -118,6 +119,7 @@
   }
   .Header {
     font-size: 2rem;
+    margin-top: 0;
   }
   .SubHeader {
     margin-top: -1rem;
