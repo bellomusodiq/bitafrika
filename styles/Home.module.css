@@ -82,6 +82,9 @@
 .ScrollContainer {
   display: none;
 }
+.ReadyToJoinMobile {
+  display: none;
+}
 @media screen and (max-width: 1030px) {
   .LeftCoins,
   .RightCoins {
@@ -184,6 +187,12 @@
     display: none;
   }
   .ThumbnailContainerMobile {
+    display: block;
+  }
+  .ReadyToJoinContainer {
+    display: none;
+  }
+  .ReadyToJoinMobile {
     display: block;
   }
   .ThumbnailContainer {
