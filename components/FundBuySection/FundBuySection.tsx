@@ -19,7 +19,7 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
     <>
       <div
         // onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}
+        // onMouseLeave={() => setIsHover(false)}
         className={styles.FundBuyItem}
         style={{
           background: backgroundColor

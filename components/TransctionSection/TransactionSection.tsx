@@ -8,7 +8,7 @@ const TransactionSection: React.FC = () => {
   return (
     <section
       // onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
+      // onMouseLeave={() => setIsHover(false)}
       className={styles.TransactionSection}
       style={{
         backgroundColor: isHover ? "#2356E7" : "#F9F9F9",

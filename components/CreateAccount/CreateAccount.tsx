@@ -9,7 +9,7 @@ const CreateAccount: React.FC = () => {
   return (
     <section
       // onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
+      // onMouseLeave={() => setIsHover(false)}
       className={styles.CreateAccount}
       style={{ background: isHover ? "#2356E7" : "#F9F9F9" }}
     >

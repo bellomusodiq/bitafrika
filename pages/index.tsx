@@ -146,7 +146,7 @@ const Home: NextPage = () => {
                   ? "scale(1.2,1.2) translateY(-5%)"
                   : "scale(1, 1) translateY(0)",
               }}
-              // // onMouseEnter={() => setIsHover(true)}
+              // onMouseEnter={() => setIsHover(true)}
               // onMouseLeave={() => setIsHover(false)}
             />
             <img
