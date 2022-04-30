@@ -8,6 +8,7 @@ import StoreButton from "../components/Button/StoreButton";
 import CreateAccount from "../components/CreateAccount/CreateAccount";
 import FundBuySection from "../components/FundBuySection/FundBuySection";
 import KeySection from "../components/KeySection/KeySection";
+import ReadyToJoinMobile from "../components/ReadyToJoinMobile/ReadyToJoinMobile";
 import ReadyToJoinSection from "../components/ReadyToJoinSection/ReadyToJoinSection";
 import Thumbnail from "../components/Thumbnail/Thumbnail";
 import { ThumbnailItemType } from "../components/Thumbnail/types";
@@ -23,7 +24,9 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     title: "Easy and convenient",
     text: "Navigate around the app with ease and perform your transactions without hassle",
     image: "/images/easy.png",
-    imageFull: true,
+    // imageFull: true,
+    backgroundColor: "#2356E7",
+    color: "white",
   },
   {
     id: "2",
@@ -43,6 +46,8 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     title: "Simple and fast withdrawals",
     text: "We do not delay payment as we understand how brisk withdrawals gives our users joy",
     image: "/images/money-transfer.png",
+    backgroundColor: "#2356E7",
+    color: "white",
   },
 ];
 const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
@@ -67,18 +72,17 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "3",
     title: "Great customer support",
     text: "Having trouble with transactions or operation, our support team are on group to aid you",
-    isSvg: true,
-    // image: "/images/colaboration.png",
-    backgroundColor: "#2356E7",
-    color: "white",
+    image: "/images/customer-support.png",
+    backgroundColor: "rgba(35, 86, 231, 0.1)",
+    color: "black",
   },
   {
     id: "4",
     title: "Simple and fast withdrawals",
     text: "We do not delay payment as we understand how brisk withdrawals gives our users joy",
     image: "/images/money-transfer.png",
-    backgroundColor: "rgba(35, 86, 231, 0.1)",
-    color: "black",
+    backgroundColor: "#2356E7",
+    color: "white",
   },
 ];
 
@@ -197,8 +201,13 @@ const Home: NextPage = () => {
           Sending and recieving cryptocurrency seamlessly in a smarter way
         </h3>
         <TransactionSection />
-        <KeySection />
-        <ReadyToJoinSection />
+        {/* <KeySection /> */}
+        <div className={styles.ReadyToJoinContainer}>
+          <ReadyToJoinSection />
+        </div>
+        <div className={styles.ReadyToJoinMobile}>
+          <ReadyToJoinMobile />
+        </div>
       </PageLayout>
     </>
   );

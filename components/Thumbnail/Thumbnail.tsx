@@ -46,7 +46,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
         </h3>
       )}
       <p
-        className={styles.Text}
+        className={!showButton ? styles.Text : styles.TextButton}
         style={{
           textAlign: showButton ? "left" : "center",
           color: color ? color : isHover && !showButton ? "white" : "black",
@@ -63,7 +63,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
             title={buttonTitle}
           />
         </div>
-      ) : !isSvg ? (
+      ) : (
         <img
           src={image}
           style={{
@@ -72,11 +72,6 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
           }}
           alt={String(title)}
           className={styles.Image}
-        />
-      ) : (
-        <CustomerSupportIcon
-          isHover={isHover}
-          color={isHover ? "white" : "#2356E7"}
         />
       )}
     </div>

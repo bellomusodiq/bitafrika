@@ -1,0 +1,46 @@
+.Container {
+  margin-bottom: 2rem;
+}
+.Main {
+  background-color: #2356e7;
+  padding: 1rem 0.7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 17px;
+  overflow: hidden;
+}
+.Title {
+  font-size: 1.57rem;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  text-align: center;
+  width: 70%;
+}
+.Text {
+  color: white;
+  line-height: 1.7rem;
+  margin-top: 21px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 77%;
+}
+.Logo {
+  width: 50%;
+}
+.Bitcoins {
+  width: 100%;
+  margin-left: -35%;
+  margin-bottom: -20%;
+  margin-top: 1rem;
+}
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
+}
+.Button {
+  margin-bottom: 1rem;
+}

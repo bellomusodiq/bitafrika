@@ -33,9 +33,10 @@
   transition: 0.8s ease all;
 }
 .Text {
-  width: 60%;
+  width: 73%;
   font-size: 1.125rem;
   transition: 0.8s ease all;
+  line-height: 160.1%;
 }
 .ButtonContainerMobile {
   display: none;
@@ -77,6 +78,7 @@
     width: 100%;
     margin-bottom: 1.5rem;
     /* padding: 2rem 1.2rem 0 0rem; */
+    padding-bottom: 0;
   }
   .ButtonContainer {
     display: none;
@@ -87,7 +89,7 @@
     margin-bottom: 5rem;
   }
   .Image {
-    margin-bottom: 1rem;
+    margin-bottom: -2rem;
   }
   .Text {
     text-align: center;

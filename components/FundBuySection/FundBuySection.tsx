@@ -14,7 +14,7 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
   centerText,
   buttonType,
 }) => {
-  const [isHover, setIsHover] = useState<boolean>(false);
+  const [isHover, setIsHover] = useState<boolean>(true);
   return (
     <>
       <div
@@ -55,7 +55,7 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
           </div>
           <img
             style={{
-              transform: isHover ? "scale(1.3, 1.3)" : "scale(1, 1)",
+              transform: isHover ? "scale(1, 1)" : "scale(1, 1)",
             }}
             src={image}
             alt={title}
@@ -64,7 +64,7 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
         </div>
       </div>
       <div className={styles.ButtonContainerMobile}>
-        <Button stretch outlined={buttonType === "outlined"} title="Download" />
+        <Button stretch outlined={false} title="Download" />
       </div>
     </>
   );
@@ -107,8 +107,8 @@ const FundBuySection: React.FC = () => {
               send bitcoin to any merchant/friend 
               or sell your bitcoin for cash"
           image="/images/buy.png"
-          backgroundColor="rgba(35, 86, 231, 0.1)"
-          color="black"
+          backgroundColor="#2356e7"
+          color="white"
           centerText
         />
       </section>

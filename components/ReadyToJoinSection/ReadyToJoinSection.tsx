@@ -4,12 +4,12 @@ import StoreButton from "../Button/StoreButton";
 import styles from "./ReadyToJoinSection.module.css";
 
 const ReadyToJoinSection: React.FC = () => {
-  const [isHover, setIsHover] = useState<boolean>(false);
+  const [isHover, setIsHover] = useState<boolean>(true);
   return (
     <>
       <section
         // onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}
+        // onMouseLeave={() => setIsHover(false)}
         className={styles.ReadyToJoinSection}
         style={{
           backgroundColor: isHover ? "#2356E7" : "#F9F9F9",
