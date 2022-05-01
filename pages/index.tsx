@@ -142,7 +142,11 @@ const Home: NextPage = () => {
               }
             />
             <img
-              src="/images/phone-banner.svg"
+              src={
+                !isMobile
+                  ? "/images/phone-banner.svg"
+                  : "/images/phone-banner-mobile.svg"
+              }
               alt="bitafika phone image"
               className={styles.PhoneBanner}
               style={{
@@ -195,7 +199,7 @@ const Home: NextPage = () => {
         <CreateAccount />
         <FundBuySection />
         <h3 className={styles.GetStarted}>Why us?</h3>
-        <h3 className={styles.SendingText}>
+        <h3 className={styles.SendingText2}>
           Why you should choose{" "}
           <span className={styles.BlueText}>BitAfrika</span>
         </h3>
@@ -205,7 +209,7 @@ const Home: NextPage = () => {
         <div className={styles.ThumbnailContainerMobile}>
           <Thumbnail items={THUMBNAIL_DATA_MOBILE} />
         </div>
-        <h3 className={styles.SendingText} style={{ marginTop: "1.5rem" }}>
+        <h3 className={styles.SendingText2} style={{ marginTop: "1.5rem" }}>
           Sending and recieving cryptocurrency seamlessly in a smarter way
         </h3>
         <TransactionSection />

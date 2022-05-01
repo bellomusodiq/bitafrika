@@ -87,6 +87,13 @@
   margin: auto;
   margin-bottom: 2rem;
 }
+.SendingText2 {
+  font-size: 3rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
 .ScrollContainer {
   display: none;
 }
@@ -142,25 +149,29 @@
 }
 @media screen and (max-width: 500px) {
   .Banner {
-    align-items: center;
+    /* align-items: center; */
     /* background-color: red; */
     /* height: fit-content !important; */
-    padding: 0;
+    padding: 0 5%;
     background-position: center;
     background-size: 90% 90%;
     margin-bottom: 0rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     background-image: url("/images/background-mobile.png");
   }
   .LeftCoins,
   .RightCoins {
     height: 100%;
+    margin-top: 2%;
+  }
+  .RightCoins {
+    margin-top: 15%;
   }
   .PhoneBanner {
     width: 40%;
   }
   .BannerImage {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
   .IntroText {
     width: 100%;
@@ -177,8 +188,14 @@
   }
   .SendingText {
     width: 100%;
+    font-size: 26.82px;
+    font-weight: 700;
+    margin-top: 287.5px;
+  }
+  .SendingText2 {
+    width: 100%;
     font-size: 1.2rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   .LeftCoins,
   .RightCoins {
@@ -186,14 +203,16 @@
   }
   .PhoneBanner {
     /* background-color: red; */
-    width: 50%;
+    width: 70%;
     /* margin-left: -7.5%; */
     align-self: flex-end;
     height: 100%;
+    margin-top: -10%;
+    margin-bottom: 5%;
   }
-  .GetStarted {
+  /* .GetStarted {
     display: none;
-  }
+  } */
   .ThumbnailContainerMobile {
     display: block;
   }
@@ -209,5 +228,8 @@
   .ScrollContainer {
     display: flex;
     justify-content: center;
+  }
+  .DownloadButtons {
+    margin-bottom: 2rem;
   }
 }
