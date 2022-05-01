@@ -96,6 +96,6 @@
   }
   .Image {
     width: 80% !important;
-    margin-bottom: -7% !important;
+    /* margin-bottom: 2% !important; */
   }
 }
