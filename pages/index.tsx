@@ -83,6 +83,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     image: "/images/money-transfer.svg",
     backgroundColor: "#2356E7",
     color: "white",
+    imageFullSpecial: true,
   },
 ];
 
