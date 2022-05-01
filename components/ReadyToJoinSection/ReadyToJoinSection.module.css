@@ -17,6 +17,7 @@
 .Image {
   width: 35%;
   transition: 0.4s ease all;
+  margin-top: 5%;
 }
 .Header {
   font-size: 3rem;

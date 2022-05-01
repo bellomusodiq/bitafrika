@@ -30,7 +30,7 @@ const TransactionSection: React.FC = () => {
         </div>
       </div>
       <img
-        src="/images/easy-money.png"
+        src="/images/easy-money.svg"
         alt="Borderless Transaction Image"
         className={styles.Image}
         style={{

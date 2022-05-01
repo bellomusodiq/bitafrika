@@ -9,19 +9,26 @@
   /* margin-top: -10vh; */
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 12.5%;
   padding-top: 5vh;
   margin-bottom: -4vh;
+  position: relative;
   /* padding-bottom: 12vh; */
 }
 .PhoneBanner {
   transition: 0.4s ease all;
-  width: 60%;
+  width: 30%;
+  margin-top: 5%;
 }
 .LeftCoins,
 .RightCoins {
   width: 25%;
-  height: 40vh;
+  /* height: 40vh; */
+}
+.RightCoins {
+  /* width: 30%; */
+  /* position: relative; */
+  margin-bottom: -13%;
 }
 .BannerImage {
   width: 100%;
@@ -45,7 +52,7 @@
 .Header {
   text-align: center;
   font-size: 3rem;
-  margin-top: -5vh;
+  /* margin-top: -5vh; */
 }
 .BlueText {
   color: #2356e7;
@@ -179,7 +186,7 @@
   }
   .PhoneBanner {
     /* background-color: red; */
-    width: 70%;
+    width: 50%;
     /* margin-left: -7.5%; */
     align-self: flex-end;
     height: 100%;

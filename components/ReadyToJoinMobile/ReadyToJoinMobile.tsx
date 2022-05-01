@@ -12,7 +12,7 @@ const ReadyToJoinMobile: React.FC = () => {
           go.
         </p>
         <img className={styles.Logo} src="/icons/logo-white.svg" />
-        <img className={styles.Bitcoins} src="/images/bitcoins.png" />
+        <img className={styles.Bitcoins} src="/images/bitcoins.svg" />
       </div>
       <div className={styles.ButtonContainer}>
         <div className={styles.Button}>

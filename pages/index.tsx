@@ -23,8 +23,8 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     id: "1",
     title: "Easy and convenient",
     text: "Navigate around the app with ease and perform your transactions without hassle",
-    image: "/images/easy.png",
-    // imageFull: true,
+    image: "/images/easy.svg",
+    imageFull: true,
     backgroundColor: "#2356E7",
     color: "white",
   },
@@ -32,20 +32,20 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     id: "2",
     title: "Safe & Secure",
     text: "Our platform is securely enveloped with end to end encryption",
-    image: "/images/locked.png",
+    image: "/images/locked.svg",
   },
   {
     id: "3",
     title: "Great customer support",
     text: "Having trouble with transactions or operation, our support team are on group to aid you",
     // isSvg: true,
-    image: "/images/customer-support.png",
+    image: "/images/customer-support.svg",
   },
   {
     id: "4",
     title: "Simple and fast withdrawals",
     text: "We do not delay payment as we understand how brisk withdrawals gives our users joy",
-    image: "/images/money-transfer.png",
+    image: "/images/money-transfer.svg",
     backgroundColor: "#2356E7",
     color: "white",
   },
@@ -55,7 +55,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "1",
     title: "Easy and convenient",
     text: "Navigate around the app with ease and perform your transactions without hassle",
-    image: "/images/easy.png",
+    image: "/images/easy.svg",
     imageFull: true,
     backgroundColor: "#2356E7",
     color: "white",
@@ -64,7 +64,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "2",
     title: "Safe & Secure",
     text: "Our platform is securely enveloped with end to end encryption",
-    image: "/images/locked.png",
+    image: "/images/locked.svg",
     backgroundColor: "rgba(35, 86, 231, 0.1)",
     color: "black",
   },
@@ -72,7 +72,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "3",
     title: "Great customer support",
     text: "Having trouble with transactions or operation, our support team are on group to aid you",
-    image: "/images/customer-support.png",
+    image: "/images/customer-support.svg",
     backgroundColor: "rgba(35, 86, 231, 0.1)",
     color: "black",
   },
@@ -80,7 +80,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "4",
     title: "Simple and fast withdrawals",
     text: "We do not delay payment as we understand how brisk withdrawals gives our users joy",
-    image: "/images/money-transfer.png",
+    image: "/images/money-transfer.svg",
     backgroundColor: "#2356E7",
     color: "white",
   },
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
         heroSection={
           <section className={styles.Banner}>
             {/* <Image
-            src="/images/background.png"
+            src="/images/background.svg"
             alt="background image"
             // className={styles.BackgroundImage}
             objectFit="cover"
@@ -135,10 +135,14 @@ const Home: NextPage = () => {
             <img
               className={styles.LeftCoins}
               alt="left coin"
-              src={`/images/left-coins${isMobile ? "-mobile" : ""}.png`}
+              src={
+                !isMobile
+                  ? "/images/left-coins.svg"
+                  : "/images/left-coins-mobile.png"
+              }
             />
             <img
-              src="/images/phone-banner.png"
+              src="/images/phone-banner.svg"
               alt="bitafika phone image"
               className={styles.PhoneBanner}
               style={{
@@ -152,7 +156,11 @@ const Home: NextPage = () => {
             <img
               className={styles.RightCoins}
               alt="left coin"
-              src={`/images/right-coins${isMobile ? "-mobile" : ""}.png`}
+              src={
+                !isMobile
+                  ? "/images/right-coins.svg"
+                  : "/images/right-coins-mobile.png"
+              }
             />
           </section>
         }

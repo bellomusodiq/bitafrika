@@ -79,14 +79,14 @@ const FundBuySection: React.FC = () => {
           text="Great !! it's now time to fund your account. 
               You can buy with Mobile Money or 
               receive from an external wallet"
-          image="/images/fund.png"
+          image="/images/fund.svg"
         />
         <FundBuyItem
           title="Start buying & selling"
           text="With your account funded, you can 
               send bitcoin to any merchant/friend 
               or sell your bitcoin for cash"
-          image="/images/buy.png"
+          image="/images/buy.svg"
         />
       </section>
       <section className={styles.FundBuySectionMobile}>
@@ -95,7 +95,7 @@ const FundBuySection: React.FC = () => {
           text="Great !! it's now time to fund your account. 
               You can buy with Mobile Money or 
               receive from an external wallet"
-          image="/images/fund.png"
+          image="/images/fund.svg"
           backgroundColor="#2356e7"
           color="white"
           centerText
@@ -106,7 +106,7 @@ const FundBuySection: React.FC = () => {
           text="With your account funded, you can 
               send bitcoin to any merchant/friend 
               or sell your bitcoin for cash"
-          image="/images/buy.png"
+          image="/images/buy.svg"
           backgroundColor="#2356e7"
           color="white"
           centerText

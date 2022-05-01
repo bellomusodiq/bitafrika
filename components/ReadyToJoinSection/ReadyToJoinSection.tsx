@@ -36,7 +36,7 @@ const ReadyToJoinSection: React.FC = () => {
           </div>
         </div>
         <img
-          src="/images/bitcoins.png"
+          src="/images/bitcoins.svg"
           alt="bitcoin images"
           className={styles.Image}
           style={{

@@ -25,7 +25,7 @@ const PrivacyPolicy: NextPage = () => {
           Privacy Policy
         </h1>
         <img
-          src="/images/document.png"
+          src="/images/document.svg"
           className={styles.Image}
           style={{
             transform: isHover

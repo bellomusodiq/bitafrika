@@ -37,7 +37,7 @@ const CreateAccount: React.FC = () => {
       </div>
       <div className={styles.ImageContainer}>
         <img
-          src="/images/get-started.png"
+          src="/images/get-started.svg"
           alt="Get Started Image"
           className={styles.GetStartedImage}
           style={{

@@ -11,19 +11,19 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
   {
     id: "1",
     title: "Organizations",
-    image: "/images/organizations.png",
+    image: "/images/organizations.svg",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
   },
   {
     id: "2",
     title: "Businesses",
-    image: "/images/businesses.png",
+    image: "/images/businesses.svg",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
   },
   {
     id: "3",
     title: "Individuals",
-    image: "/images/individuals.png",
+    image: "/images/individuals.svg",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
   },
   {
@@ -43,7 +43,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
   {
     id: "1",
     title: "Organizations",
-    image: "/images/organizations.png",
+    image: "/images/organizations.svg",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
     backgroundColor: "#2356E7",
     color: "white",
@@ -51,7 +51,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
   {
     id: "2",
     title: "Businesses",
-    image: "/images/businesses.png",
+    image: "/images/businesses.svg",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
     backgroundColor: "rgba(35, 86, 231, 0.1)",
     color: "black",
@@ -59,7 +59,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
   {
     id: "3",
     title: "Individuals",
-    image: "/images/individuals.png",
+    image: "/images/individuals.svg",
     text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
     backgroundColor: "#2356E7",
     color: "white",
@@ -96,7 +96,7 @@ const B2B: NextPage = () => {
           Business 2 Business
         </h1>
         <img
-          src="/images/business-advisers.png"
+          src="/images/business-advisers.svg"
           className={styles.Image}
           style={{
             transform: isHover

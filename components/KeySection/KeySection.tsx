@@ -7,7 +7,7 @@ const KeySection: React.FC = () => {
     <>
       <section className={styles.KeySection}>
         <img
-          src="/images/sign-up.png"
+          src="/images/sign-up.svg"
           alt="signup image"
           className={styles.Image}
         />
@@ -30,7 +30,7 @@ const KeySection: React.FC = () => {
           your funds <span className={styles.BlueText}>safe</span>
         </h3>
         <img
-          src="/images/sign-up.png"
+          src="/images/sign-up.svg"
           alt="signup image"
           className={styles.ImageMobile}
         />
