@@ -16,6 +16,7 @@
 }
 .PhoneBanner {
   transition: 0.4s ease all;
+  width: 60%;
 }
 .LeftCoins,
 .RightCoins {

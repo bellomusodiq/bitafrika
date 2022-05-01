@@ -39,7 +39,7 @@
   line-height: 175.1%;
 }
 .Image {
-  height: 50%;
+  width: 50%;
   margin-top: 1.5rem;
   transition: 0.5s ease all;
 }
