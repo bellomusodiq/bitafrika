@@ -98,7 +98,7 @@ const Home: NextPage = () => {
         if (currentIndex === 2) return 0;
         return currentIndex + 1;
       });
-    }, 1000);
+    }, 1500);
     return () => clearInterval(interval);
   }, [choiceIndex]);
 
@@ -123,83 +123,99 @@ const Home: NextPage = () => {
       </Head>
 
       <PageLayout
+        // heroSection={
+        //   <section className={styles.Banner}>
+        //     {/* <Image
+        //     src="/images/background.svg"
+        //     alt="background image"
+        //     // className={styles.BackgroundImage}
+        //     objectFit="cover"
+        //     width={"100%"}
+        //     height="80vh"
+        //   /> */}
+        //     <img
+        //       className={styles.LeftCoins}
+        //       alt="left coin"
+        //       src={
+        //         !isMobile
+        //           ? "/images/left-coins.svg"
+        //           : "/images/left-coins-mobile.png"
+        //       }
+        //     />
+        //     <img
+        //       src={
+        //         !isMobile
+        //           ? "/images/phone-banner.svg"
+        //           : "/images/phone-banner-mobile.svg"
+        //       }
+        //       alt="bitafika phone image"
+        //       className={styles.PhoneBanner}
+        //       style={{
+        //         transform: isHover
+        //           ? "scale(1.2,1.2) translateY(-5%)"
+        //           : "scale(1, 1) translateY(0)",
+        //       }}
+        //       // onMouseEnter={() => setIsHover(true)}
+        //       // onMouseLeave={() => setIsHover(false)}
+        //     />
+        //     <img
+        //       className={styles.RightCoins}
+        //       alt="left coin"
+        //       src={
+        //         !isMobile
+        //           ? "/images/right-coins.svg"
+        //           : "/images/right-coins-mobile.png"
+        //       }
+        //     />
+        //   </section>
+        // }
         heroSection={
-          <section className={styles.Banner}>
-            {/* <Image
-            src="/images/background.svg"
-            alt="background image"
-            // className={styles.BackgroundImage}
-            objectFit="cover"
-            width={"100%"}
-            height="80vh"
-          /> */}
-            <img
-              className={styles.LeftCoins}
-              alt="left coin"
-              src={
-                !isMobile
-                  ? "/images/left-coins.svg"
-                  : "/images/left-coins-mobile.png"
-              }
-            />
-            <img
-              src={
-                !isMobile
-                  ? "/images/phone-banner.svg"
-                  : "/images/phone-banner-mobile.svg"
-              }
-              alt="bitafika phone image"
-              className={styles.PhoneBanner}
-              style={{
-                transform: isHover
-                  ? "scale(1.2,1.2) translateY(-5%)"
-                  : "scale(1, 1) translateY(0)",
-              }}
-              // onMouseEnter={() => setIsHover(true)}
-              // onMouseLeave={() => setIsHover(false)}
-            />
-            <img
-              className={styles.RightCoins}
-              alt="left coin"
-              src={
-                !isMobile
-                  ? "/images/right-coins.svg"
-                  : "/images/right-coins-mobile.png"
-              }
-            />
+          <section className={styles.HeroSection}>
+            <div className={styles.HeroLeft}>
+              <section className={styles.IntroText}>
+                <h1 className={styles.Header}>
+                  The{" "}
+                  <span className={styles.BlueText}>
+                    {HEADER_TEXT_OPTIONS[choiceIndex]}
+                  </span>{" "}
+                  way to buy and sell{" "}
+                  <span className={styles.YellowText}>cryptocurrency</span>
+                </h1>
+                <p className={styles.SubHeader}>
+                  Buy, sell, send or receive cryptocurrency with ease. Fast,
+                  secure and 24/7. No hidden Fees
+                </p>
+                <p className={styles.DownloadText}>
+                  Download the BitAfrika app
+                </p>
+                <section className={styles.DownloadButtons}>
+                  <div className={styles.AppleButton}>
+                    <StoreButton noBackground store="apple" />
+                  </div>
+                  <div className={styles.GoogleButton}>
+                    <StoreButton noBackground store="google" />
+                  </div>
+                </section>
+              </section>
+            </div>
+            <div className={styles.HeroRight}>
+              <img src="/images/hero.svg" className={styles.HeroImage} />
+            </div>
           </section>
         }
       >
-        <section className={styles.IntroText}>
-          <h1 className={styles.Header}>
-            The{" "}
-            <span className={styles.BlueText}>
-              {HEADER_TEXT_OPTIONS[choiceIndex]}
-            </span>{" "}
-            way to buy and sell{" "}
-            <span className={styles.YellowText}>cryptocurrency</span>
-          </h1>
-          <p className={styles.SubHeader}>
-            Buy, sell, send or receive cryptocurrency with ease. Fast, secure
-            and 24/7. No hidden Fees
-          </p>
-        </section>
-        <section className={styles.DownloadButtons}>
-          <StoreButton store="apple" />
-          <StoreButton store="google" />
-        </section>
-        <div className={styles.ScrollContainer}>
+        {/* <div className={styles.ScrollContainer}>
           <a href="#SendingText">
             <img src="/icons/arrow-down.svg" alt="arrow down" />
           </a>
-        </div>
+        </div> */}
         <h3 className={styles.GetStarted}>How to get started</h3>
         <h3 id="SendingText" className={styles.SendingText}>
           Sending and recieving cryptocurrency in a smarter way
         </h3>
         <CreateAccount />
         <FundBuySection />
-        <h3 className={styles.GetStarted}>Why us?</h3>
+        <h3 className={styles.Why}>Why us?</h3>
         <h3 className={styles.SendingText2}>
           Why you should choose{" "}
           <span className={styles.BlueText}>BitAfrika</span>
@@ -211,7 +227,7 @@ const Home: NextPage = () => {
           <Thumbnail items={THUMBNAIL_DATA_MOBILE} />
         </div>
         <h3 className={styles.SendingText2} style={{ marginTop: "1.5rem" }}>
-          Sending and recieving cryptocurrency seamlessly in a smarter way
+          Sending and recieving cryptocurrencies seamlessly in a smarter way
         </h3>
         <TransactionSection />
         {/* <KeySection /> */}

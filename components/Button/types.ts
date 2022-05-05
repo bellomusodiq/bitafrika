@@ -5,4 +5,5 @@ export interface IButton {
   store?: "apple" | "google";
   isHover?: boolean;
   stretch?: boolean;
+  noBackground?: boolean;
 }
