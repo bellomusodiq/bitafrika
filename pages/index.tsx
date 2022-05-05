@@ -199,7 +199,7 @@ const Home: NextPage = () => {
               </section>
             </div>
             <div className={styles.HeroRight}>
-              <img src="/images/hero.svg" className={styles.HeroImage} />
+              <img src="/images/hero.png" className={styles.HeroImage} />
             </div>
           </section>
         }
