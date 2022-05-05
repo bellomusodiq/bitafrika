@@ -13,7 +13,7 @@
   background-image: url("/images/blue-mesh.png");
   background-position: left;
   background-size: 100% 100%;
-  padding-left: 2.5%;
+  padding-left: 7.5%;
 }
 .HeroRight {
   background-image: url("/images/yellow-mesh.png");
@@ -74,8 +74,8 @@
   margin: auto;
 }
 .IntroText {
-  width: 55%;
-  margin: auto;
+  width: 75%;
+  /* margin: auto; */
   text-align: left;
   font-family: "Helvetica Neue";
 }
@@ -103,7 +103,6 @@
 .DownloadButtons {
   display: flex;
   justify-content: center;
-  margin: auto;
   /* margin-bottom: 5rem; */
   width: 70%;
 }
@@ -119,8 +118,10 @@
 .GetStarted {
   text-align: center;
   color: #717171;
-  font-size: 2.25rem;
+  font-size: 36px;
   margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 36.4px;
 }
 .Why {
   text-align: center;
@@ -129,7 +130,9 @@
   margin-bottom: 1.5rem;
 }
 .SendingText {
-  font-size: 3rem;
+  font-size: 48px;
+  line-height: 48.53px;
+  font-weight: 700;
   text-align: center;
   width: 80%;
   margin: auto;
@@ -219,6 +222,8 @@
   .HeroLeft {
     background-image: none;
     padding: 0 5%;
+    margin-top: -1rem;
+    z-index: 1;
   }
   .HeroRight {
     background-image: url("/images/background-mobile.png");
@@ -262,9 +267,9 @@
     text-align: center;
   }
   .SubHeader {
-    width: 85%;
+    width: 100%;
     font-weight: 600;
-    font-size: 11.9279px;
+    font-size: 11.93px;
     line-height: 151.6%;
     text-align: center;
   }
@@ -331,6 +336,7 @@
     justify-content: center;
   }
   .DownloadButtons {
+    margin: auto;
     margin-bottom: 2rem;
   }
 }

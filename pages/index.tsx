@@ -16,7 +16,7 @@ import TransactionSection from "../components/TransctionSection/TransactionSecti
 import styles from "../styles/Home.module.css";
 import PageLayout from "../templates/PageLayout/PageLayout";
 
-const HEADER_TEXT_OPTIONS: string[] = ["easiest", "safest", "fastest"];
+const HEADER_TEXT_OPTIONS: string[] = ["Easiest", "Safest", "Fastest"];
 
 const THUMBNAIL_DATA: ThumbnailItemType[] = [
   {
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
         </div> */}
         <h3 className={styles.GetStarted}>How to get started</h3>
         <h3 id="SendingText" className={styles.SendingText}>
-          Sending and recieving cryptocurrency in a smarter way
+          Sending and recieving cryptocurrencies in a smarter way
         </h3>
         <CreateAccount />
         <FundBuySection />
