@@ -218,13 +218,18 @@
   }
   .HeroLeft {
     background-image: none;
+    padding: 0 5%;
   }
   .HeroRight {
     background-image: url("/images/background-mobile.png");
     background-size: 100%;
+    /* padding: 0;
+    display: flex;
+    justify-content: center; */
   }
   .HeroImage {
     padding-top: 0;
+    width: 95%;
   }
   .Banner {
     /* align-items: center; */
@@ -247,9 +252,6 @@
   }
   .PhoneBanner {
     width: 40%;
-  }
-  .BannerImage {
-    /* margin-top: 1rem; */
   }
   .IntroText {
     width: 100%;

@@ -179,7 +179,7 @@ const Home: NextPage = () => {
                     {HEADER_TEXT_OPTIONS[choiceIndex]}
                   </span>{" "}
                   way to buy and sell{" "}
-                  <span className={styles.YellowText}>cryptocurrency</span>
+                  <span className={styles.YellowText}>cryptocurrencies</span>
                 </h1>
                 <p className={styles.SubHeader}>
                   Buy, sell, send or receive cryptocurrency with ease. Fast,
