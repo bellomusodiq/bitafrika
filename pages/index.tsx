@@ -212,7 +212,7 @@ const Home: NextPage = () => {
         </div> */}
         <h3 className={styles.GetStarted}>How to get started</h3>
         <h3 id="SendingText" className={styles.SendingText}>
-          Sending and recieving cryptocurrencies in a smarter way
+          Send and receive cryptocurrencies in a smarter way
         </h3>
         <CreateAccount />
         <FundBuySection />
@@ -228,7 +228,7 @@ const Home: NextPage = () => {
           <Thumbnail items={THUMBNAIL_DATA_MOBILE} />
         </div>
         <h3 className={styles.SendingText2}>
-          Sending and recieving{" "}
+          Sending and receiving{" "}
           <span className={styles.YellowText}>Crypto</span> seamlessly in a
           smarter way
         </h3>
