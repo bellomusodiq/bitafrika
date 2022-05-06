@@ -71,7 +71,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
           style={{
             transform: isHover ? "scale(1.5, 1.5)" : "scale(1, 1)",
             marginBottom: imageFull ? "-7%" : imageFullSpecial ? "-25%" : 0,
-            width: imageFull ? "75%" : midImage ? "65%" : "50%",
+            width: imageFull ? "75%" : midImage ? "65%" : "45%",
           }}
           alt={String(title)}
           className={styles.Image}

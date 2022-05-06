@@ -217,7 +217,7 @@ const Home: NextPage = () => {
         <CreateAccount />
         <FundBuySection />
         <h3 className={styles.Why}>Why us?</h3>
-        <h3 className={styles.SendingText2}>
+        <h3 className={styles.SendingText3}>
           Why you should choose{" "}
           <span className={styles.BlueText}>BitAfrika</span>
         </h3>
@@ -227,8 +227,10 @@ const Home: NextPage = () => {
         <div className={styles.ThumbnailContainerMobile}>
           <Thumbnail items={THUMBNAIL_DATA_MOBILE} />
         </div>
-        <h3 className={styles.SendingText2} style={{ marginTop: "1.5rem" }}>
-          Sending and recieving cryptocurrencies seamlessly in a smarter way
+        <h3 className={styles.SendingText2}>
+          Sending and recieving{" "}
+          <span className={styles.YellowText}>Crypto</span> seamlessly in a
+          smarter way
         </h3>
         <TransactionSection />
         {/* <KeySection /> */}

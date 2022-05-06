@@ -14,7 +14,7 @@
   background-position: left;
   background-size: 100% 100%;
   padding-left: 10%;
-  width: 45%;
+  width: 40%;
 }
 .HeroRight {
   background-image: url("/images/yellow-mesh.png");
@@ -22,7 +22,7 @@
   background-position-y: 0vh;
   background-size: 130% 120%;
   padding-right: 10%;
-  width: 55%;
+  width: 60%;
 }
 .HeroImage {
   width: 100%;
@@ -76,15 +76,15 @@
   margin: auto;
 }
 .IntroText {
-  width: 85%;
+  width: 100%;
   /* margin: auto; */
   text-align: left;
-  font-family: "Helvetica Neue";
 }
 .Header {
   font-size: 48px;
   font-weight: bolder;
   line-height: 62.93px;
+  font-family: "Helvetica Neue";
 }
 .BlueText {
   color: #2356e7;
@@ -101,6 +101,7 @@
   margin-top: -2.5rem;
   margin-bottom: 22px;
   line-height: 27.29px;
+  font-weight: 600;
 }
 .DownloadButtons {
   display: flex;
@@ -124,12 +125,15 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 36.4px;
+  margin-top: 75px;
 }
 .Why {
   text-align: center;
   color: #717171;
-  font-size: 2.25rem;
+  font-size: 30px;
+  line-height: 30.33px;
   margin-bottom: 1.5rem;
+  margin-top: 140px;
 }
 .SendingText {
   font-size: 48px;
@@ -141,6 +145,14 @@
   margin-bottom: 2rem;
 }
 .SendingText2 {
+  font-size: 3rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 140px;
+}
+.SendingText3 {
   font-size: 3rem;
   text-align: center;
   width: 80%;
