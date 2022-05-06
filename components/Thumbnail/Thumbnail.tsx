@@ -18,6 +18,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
   backgroundColor,
   color,
   imageFullSpecial,
+  midImage,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
@@ -70,7 +71,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
           style={{
             transform: isHover ? "scale(1.5, 1.5)" : "scale(1, 1)",
             marginBottom: imageFull ? "-7%" : imageFullSpecial ? "-25%" : 0,
-            width: imageFull ? "65%" : "50%",
+            width: imageFull ? "75%" : midImage ? "65%" : "50%",
           }}
           alt={String(title)}
           className={styles.Image}
@@ -98,6 +99,7 @@ const Thumbnail: React.FC<IThumbnail> = ({ items }) => {
           backgroundColor={item.backgroundColor}
           color={item.color}
           imageFullSpecial={item.imageFullSpecial}
+          midImage={item.midImage}
         />
       ))}
     </section>

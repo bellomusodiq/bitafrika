@@ -48,6 +48,7 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     image: "/images/money-transfer.svg",
     backgroundColor: "#2356E7",
     color: "white",
+    midImage: true,
   },
 ];
 const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
@@ -178,7 +179,7 @@ const Home: NextPage = () => {
                   <span className={styles.BlueText}>
                     {HEADER_TEXT_OPTIONS[choiceIndex]}
                   </span>{" "}
-                  way to buy and sell{" "}
+                  way <br /> to buy and sell{" "}
                   <span className={styles.YellowText}>cryptocurrencies</span>
                 </h1>
                 <p className={styles.SubHeader}>

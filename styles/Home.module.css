@@ -4,7 +4,7 @@
   align-items: center;
 }
 .HeroSection > div {
-  width: 50%;
+  /* width: 50%; */
   /* height: 500px; */
   /* background-position: 60%; */
   background-repeat: no-repeat;
@@ -13,18 +13,20 @@
   background-image: url("/images/blue-mesh.png");
   background-position: left;
   background-size: 100% 100%;
-  padding-left: 7.5%;
+  padding-left: 10%;
+  width: 45%;
 }
 .HeroRight {
   background-image: url("/images/yellow-mesh.png");
   background-position-x: 0.8vw;
   background-position-y: 0vh;
   background-size: 130% 120%;
-  padding-right: 2.5%;
+  padding-right: 10%;
+  width: 55%;
 }
 .HeroImage {
-  width: 90%;
-  padding-top: 90px;
+  width: 100%;
+  padding-top: 60px;
 }
 .Banner {
   background-image: url("/images/background.png");
@@ -74,7 +76,7 @@
   margin: auto;
 }
 .IntroText {
-  width: 75%;
+  width: 85%;
   /* margin: auto; */
   text-align: left;
   font-family: "Helvetica Neue";

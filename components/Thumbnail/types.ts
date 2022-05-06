@@ -12,6 +12,7 @@ export type ThumbnailItemType = {
   backgroundColor?: string;
   color?: string;
   imageFullSpecial?: boolean;
+  midImage?: boolean;
 };
 
 export interface IThumbnail {
