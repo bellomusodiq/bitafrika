@@ -35,6 +35,9 @@
 .DownloadContainerMobile {
   display: none;
 }
+.DownloadContainer > button {
+  margin-right: 25px;
+}
 @media screen and (max-width: 1030px) {
   .ReadyToJoinSection {
     padding: 2.8rem 2.8rem 2rem 2.5rem;
