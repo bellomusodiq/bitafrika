@@ -8,6 +8,7 @@ const Button: React.FC<IButton> = ({
   outlined,
   isHover,
   stretch,
+  url,
 }) => {
   const { backgroundColor, color } = useMemo(() => {
     let backgroundColor = "#FFFFFF";
@@ -22,7 +23,18 @@ const Button: React.FC<IButton> = ({
     }
     return { backgroundColor, color };
   }, [outlined, isHover]);
-  return (
+
+  const getContainer = (body: any) => {
+    if (url) {
+      return (
+        <a style={{ width: stretch ? "100%" : "11.5rem" }} href={url}>
+          {body}
+        </a>
+      );
+    }
+    return body;
+  };
+  return getContainer(
     <button
       className={styles.Button}
       style={{

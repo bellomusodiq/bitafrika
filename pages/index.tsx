@@ -22,7 +22,7 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
   {
     id: "1",
     title: "Easy and convenient",
-    text: "Navigate around the app with ease and perform your transactions without hassle",
+    text: "Navigate through the app with ease and perform your transactions without hassle",
     image: "/images/easy.svg",
     imageFull: true,
     backgroundColor: "#2356E7",
@@ -37,7 +37,7 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
   {
     id: "3",
     title: "Great customer support",
-    text: "Having trouble with transactions or operation, our support team are on group to aid you",
+    text: "Having trouble with transactions or operation, our support team are on standby to help you",
     // isSvg: true,
     image: "/images/customer-support.svg",
   },
@@ -55,7 +55,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
   {
     id: "1",
     title: "Easy and convenient",
-    text: "Navigate around the app with ease and perform your transactions without hassle",
+    text: "Navigate through the app with ease and perform your transactions without hassle",
     image: "/images/easy.svg",
     imageFull: true,
     backgroundColor: "#2356E7",
@@ -72,7 +72,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
   {
     id: "3",
     title: "Great customer support",
-    text: "Having trouble with transactions or operation, our support team are on group to aid you",
+    text: "Having trouble with transactions or operation, our support team are on standby to help you",
     image: "/images/customer-support.svg",
     backgroundColor: "rgba(35, 86, 231, 0.1)",
     color: "black",
@@ -186,15 +186,21 @@ const Home: NextPage = () => {
                   Buy, sell, send or receive cryptocurrency with ease. Fast,
                   secure and 24/7. No hidden Fees
                 </p>
-                <p className={styles.DownloadText}>
-                  Download the BitAfrika app
-                </p>
+                <p className={styles.DownloadText}>Available on the</p>
                 <section className={styles.DownloadButtons}>
                   <div className={styles.AppleButton}>
-                    <StoreButton noBackground store="apple" />
+                    <StoreButton
+                      url="https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+                      noBackground
+                      store="apple"
+                    />
                   </div>
                   <div className={styles.GoogleButton}>
-                    <StoreButton noBackground store="google" />
+                    <StoreButton
+                      url="https://play.google.com/store/apps/details?id=app.bitafrika.com"
+                      noBackground
+                      store="google"
+                    />
                   </div>
                 </section>
               </section>

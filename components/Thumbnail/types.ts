@@ -13,6 +13,7 @@ export type ThumbnailItemType = {
   color?: string;
   imageFullSpecial?: boolean;
   midImage?: boolean;
+  url?: string;
 };
 
 export interface IThumbnail {

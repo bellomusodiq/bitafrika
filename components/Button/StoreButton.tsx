@@ -10,25 +10,28 @@ const StoreButton: React.FC<IButton> = ({
   store,
   isHover,
   noBackground,
+  url,
 }) => (
-  <button
-    style={{
-      backgroundColor: noBackground
-        ? "transparent"
-        : isHover
-        ? "#2356E7"
-        : "white",
-    }}
-    onClick={onClick}
-    className={styles.StoreButton}
-  >
-    <img
-      className={styles.StoreImage}
-      src={
-        store === "apple" ? "/icons/app-store.svg" : "/icons/google-play.svg"
-      }
-    />
-  </button>
+  <a href={url}>
+    <button
+      style={{
+        backgroundColor: noBackground
+          ? "transparent"
+          : isHover
+          ? "#2356E7"
+          : "white",
+      }}
+      onClick={onClick}
+      className={styles.StoreButton}
+    >
+      <img
+        className={styles.StoreImage}
+        src={
+          store === "apple" ? "/icons/app-store.svg" : "/icons/google-play.svg"
+        }
+      />
+    </button>
+  </a>
 );
 
 export default StoreButton;

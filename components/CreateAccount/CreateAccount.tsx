@@ -1,10 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import MobileDetect from "mobile-detect";
+import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import styles from "./CreateAccount.module.css";
 
 const CreateAccount: React.FC = () => {
   const [isHover, setIsHover] = useState<boolean>(false);
+  const [os, setOS] = useState<string>("");
+  useEffect(() => {
+    if (window) {
+      const md = new MobileDetect(window.navigator.userAgent);
+      if (md.os() === "AndroidOS" || md.os() === "iOS") {
+        setOS(md.os());
+      }
+    }
+  }, []);
 
   return (
     <section
@@ -25,14 +35,29 @@ const CreateAccount: React.FC = () => {
           className={styles.Text}
         >
           {
-            "Sign up for an account on our mobile apps for Android and iOS with your basic info. It's that easy"
+            "Download and sign up on our mobile app for android or iOS. It’s that easy !!!"
           }
         </p>
         <div className={styles.ButtonContainer}>
-          <Button outlined title="Download" />
+          <Button
+            outlined
+            title="Download"
+            url={
+              os === "iOS"
+                ? "https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+                : "https://play.google.com/store/apps/details?id=app.bitafrika.com"
+            }
+          />
         </div>
         <div className={styles.ButtonContainerMobile}>
-          <Button title="Download" />
+          <Button
+            title="Download"
+            url={
+              os === "iOS"
+                ? "https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+                : "https://play.google.com/store/apps/details?id=app.bitafrika.com"
+            }
+          />
         </div>
       </div>
       <div className={styles.ImageContainer}>

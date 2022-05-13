@@ -26,7 +26,7 @@
   font-size: 1.125rem;
   text-align: center;
   width: 80%;
-  margin: auto;
+  /* margin: auto; */
   transition: 0.5s ease all;
   font-weight: 500;
   line-height: 175.1%;

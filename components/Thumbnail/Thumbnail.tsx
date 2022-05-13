@@ -19,6 +19,7 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
   color,
   imageFullSpecial,
   midImage,
+  url,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
@@ -63,6 +64,8 @@ const ThumbnailItem: React.FC<ThumbnailItemType> = ({
             isHover={isHover}
             onClick={onButtonClick}
             title={buttonTitle}
+            type="link"
+            url={url}
           />
         </div>
       ) : (
@@ -100,6 +103,7 @@ const Thumbnail: React.FC<IThumbnail> = ({ items }) => {
           color={item.color}
           imageFullSpecial={item.imageFullSpecial}
           midImage={item.midImage}
+          url={item.url}
         />
       ))}
     </section>

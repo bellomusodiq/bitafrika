@@ -35,7 +35,7 @@
 .DownloadContainerMobile {
   display: none;
 }
-.DownloadContainer > button {
+.DownloadContainer > * {
   margin-right: 25px;
 }
 @media screen and (max-width: 1030px) {

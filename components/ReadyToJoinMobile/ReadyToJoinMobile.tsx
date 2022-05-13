@@ -16,10 +16,16 @@ const ReadyToJoinMobile: React.FC = () => {
       </div>
       <div className={styles.ButtonContainer}>
         <div className={styles.Button}>
-          <StoreButton store="apple" />
+          <StoreButton
+            url="https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+            store="apple"
+          />
         </div>
         <div className={styles.Button}>
-          <StoreButton store="google" />
+          <StoreButton
+            url="https://play.google.com/store/apps/details?id=app.bitafrika.com"
+            store="google"
+          />
         </div>
       </div>
     </section>

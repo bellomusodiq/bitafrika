@@ -12,19 +12,19 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     id: "1",
     title: "Organizations",
     image: "/images/organizations.svg",
-    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    text: "Are you an organization looking to trade over the counter (OTC) / bulk crypto ?",
   },
   {
     id: "2",
     title: "Businesses",
     image: "/images/businesses.svg",
-    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    text: "Are you a business looking to trade over the counter (OTC) / bulk crypto ?",
   },
   {
     id: "3",
     title: "Individuals",
     image: "/images/individuals.svg",
-    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    text: "Are you an individual looking to trade over the counter (OTC) / bulk crypto ?",
   },
   {
     title: (
@@ -35,7 +35,8 @@ const THUMBNAIL_DATA: ThumbnailItemType[] = [
     customTitle: true,
     showButton: true,
     buttonTitle: "Get Started with B2B",
-    text: "Are you an organisation, business or individual looking to trade over the counter (OTC) / bulk crypto ? Please click get started below to fill a short questionnaire ",
+    text: "Are you an organization, business or individual looking to trade over the counter (OTC) / bulk crypto ? Please click on the link to chat with our OTC team ",
+    url: "https://wa.me/+233574484735?text=hi there",
   },
 ];
 
@@ -44,7 +45,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "1",
     title: "Organizations",
     image: "/images/organizations.svg",
-    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    text: "Are you an organization looking to trade over the counter (OTC) / bulk crypto ?",
     backgroundColor: "#2356E7",
     color: "white",
   },
@@ -52,7 +53,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "2",
     title: "Businesses",
     image: "/images/businesses.svg",
-    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    text: "Are you a business looking to trade over the counter (OTC) / bulk crypto ?",
     backgroundColor: "rgba(35, 86, 231, 0.1)",
     color: "black",
   },
@@ -60,7 +61,7 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     id: "3",
     title: "Individuals",
     image: "/images/individuals.svg",
-    text: "Great !! it's now time to fund your account. You can buy with Mobile Money or receive from an external wallet",
+    text: "Are you an individual looking to trade over the counter (OTC) / bulk crypto ?",
     backgroundColor: "#2356E7",
     color: "white",
   },
@@ -73,7 +74,8 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
     customTitle: true,
     showButton: true,
     buttonTitle: "Get Started with B2B",
-    text: "Are you an organisation, business or individual looking to trade over the counter (OTC) / bulk crypto ? Please click get started below to fill a short questionnaire ",
+    text: "Are you an organization, business or individual looking to trade over the counter (OTC) / bulk crypto ? Please click on the link to chat with our OTC team ",
+    url: "https://wa.me/+233574484735?text=hi there",
   },
 ];
 

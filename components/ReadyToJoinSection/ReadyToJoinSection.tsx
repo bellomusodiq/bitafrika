@@ -31,8 +31,16 @@ const ReadyToJoinSection: React.FC = () => {
             the go.
           </p>
           <div className={styles.DownloadContainer}>
-            <StoreButton isHover={isHover} store="apple" />
-            <StoreButton isHover={isHover} store="google" />
+            <StoreButton
+              url="https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+              isHover={isHover}
+              store="apple"
+            />
+            <StoreButton
+              url="https://play.google.com/store/apps/details?id=app.bitafrika.com"
+              isHover={isHover}
+              store="google"
+            />
           </div>
         </div>
         <img

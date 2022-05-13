@@ -6,4 +6,6 @@ export interface IButton {
   isHover?: boolean;
   stretch?: boolean;
   noBackground?: boolean;
+  type?: string;
+  url?: string;
 }

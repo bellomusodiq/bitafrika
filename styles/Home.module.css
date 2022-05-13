@@ -108,13 +108,15 @@
   display: flex;
   justify-content: center;
   /* margin-bottom: 5rem; */
-  width: 70%;
+  width: 100%;
 }
 .DownloadText {
   font-weight: 400;
   font-size: 18px;
   line-height: 151.6%;
   margin-bottom: 6px;
+  font-family: "Helvetica Neue";
+  text-align: center;
 }
 .AppleButton {
   margin-right: 20px;

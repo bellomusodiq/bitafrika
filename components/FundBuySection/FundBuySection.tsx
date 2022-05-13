@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import MobileDetect from "mobile-detect";
+import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import styles from "./FundBuySection.module.css";
 import { IFundBuyItem } from "./types";
@@ -15,6 +16,15 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
   buttonType,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(true);
+  const [os, setOS] = useState<string>("");
+  useEffect(() => {
+    if (window) {
+      const md = new MobileDetect(window.navigator.userAgent);
+      if (md.os() === "AndroidOS" || md.os() === "iOS") {
+        setOS(md.os());
+      }
+    }
+  }, []);
   return (
     <>
       <div
@@ -51,7 +61,15 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
         </div>
         <div className={styles.ButtonImageContainer}>
           <div className={styles.ButtonContainer}>
-            <Button outlined title="Download" />
+            <Button
+              url={
+                os === "iOS"
+                  ? "https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+                  : "https://play.google.com/store/apps/details?id=app.bitafrika.com"
+              }
+              outlined
+              title="Download"
+            />
           </div>
           <img
             style={{
@@ -64,7 +82,16 @@ const FundBuyItem: React.FC<IFundBuyItem> = ({
         </div>
       </div>
       <div className={styles.ButtonContainerMobile}>
-        <Button stretch outlined={false} title="Download" />
+        <Button
+          url={
+            os === "iOS"
+              ? "https://apps.apple.com/ng/app/bitafrika-buy-sell-crypto/id1577083741"
+              : "https://play.google.com/store/apps/details?id=app.bitafrika.com"
+          }
+          stretch
+          outlined={false}
+          title="Download"
+        />
       </div>
     </>
   );
@@ -83,9 +110,7 @@ const FundBuySection: React.FC = () => {
         />
         <FundBuyItem
           title="Start buying & selling"
-          text="With your account funded, you can 
-              send bitcoin to any merchant/friend 
-              or sell your bitcoin for cash"
+          text="With your account funded, you can send crypto to any merchant/friend or sell your crypto for cash"
           image="/images/buy.svg"
         />
       </section>
