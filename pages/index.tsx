@@ -71,20 +71,20 @@ const THUMBNAIL_DATA_MOBILE: ThumbnailItemType[] = [
   },
   {
     id: "3",
-    title: "Great customer support",
-    text: "Having trouble with transactions or operation, our support team are on standby to help you",
-    image: "/images/customer-support.svg",
-    backgroundColor: "rgba(35, 86, 231, 0.1)",
-    color: "black",
-  },
-  {
-    id: "4",
     title: "Simple and fast withdrawals",
     text: "We do not delay payment as we understand how brisk withdrawals gives our users joy",
     image: "/images/money-transfer.svg",
     backgroundColor: "#2356E7",
     color: "white",
     imageFullSpecial: true,
+  },
+  {
+    id: "4",
+    title: "Great customer support",
+    text: "Having trouble with transactions or operation, our support team are on standby to help you",
+    image: "/images/customer-support.svg",
+    backgroundColor: "rgba(35, 86, 231, 0.1)",
+    color: "black",
   },
 ];
 

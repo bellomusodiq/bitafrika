@@ -85,7 +85,7 @@
   font-size: 48px;
   font-weight: bolder;
   line-height: 62.93px;
-  font-family: "Helvetica Neue";
+  font-family: "Gilroy";
 }
 .BlueText {
   color: #2356e7;
@@ -102,7 +102,7 @@
   margin-top: -2.5rem;
   margin-bottom: 22px;
   line-height: 27.29px;
-  font-weight: 600;
+  font-weight: 300;
 }
 .DownloadButtons {
   display: flex;
@@ -115,7 +115,7 @@
   font-size: 18px;
   line-height: 151.6%;
   margin-bottom: 6px;
-  font-family: "Helvetica Neue";
+  font-family: "Gilroy";
   text-align: center;
 }
 .AppleButton {
@@ -285,25 +285,29 @@
   }
   .SubHeader {
     width: 100%;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 11.93px;
     line-height: 151.6%;
     text-align: center;
   }
   .GetStarted {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-top: 100.5px;
   }
   .Why {
-    font-size: 20px;
-    /* margin-top: 100.5px; */
+    font-size: 2rem;
+    margin-top: 60.5px;
     line-height: 20.22px;
-    margin: 0;
+    margin-bottom: 24px;
   }
   .SendingText {
     width: 100%;
-    font-size: 26.82px;
+    font-style: normal;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 101.1%;
+    text-align: center;
+    color: #000000;
   }
   .SendingText2 {
     width: 100%;
@@ -312,6 +316,14 @@
     font-family: "Helvetica";
     font-weight: bold;
     font-size: 26.82px;
+  }
+  .SendingText3 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 101.1%;
+    text-align: center;
   }
   .LeftCoins,
   .RightCoins {
@@ -338,6 +350,7 @@
   } */
   .ThumbnailContainerMobile {
     display: block;
+    margin-bottom: 100.1px;
   }
   .ReadyToJoinContainer {
     display: none;

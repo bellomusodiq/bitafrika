@@ -56,21 +56,21 @@
 }
 @media screen and (max-width: 500px) {
   .CreateAccount {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    padding: 0;
-    background-color: white !important;
+    padding: 20px 10px 0 10px;
+    background-color: rgba(35, 86, 231, 0.1) !important;
   }
   .CreateAccount > div {
     width: 100%;
   }
   .TextContainer {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   .ImageContainer {
-    padding: 3rem 5rem 0px;
-    background-color: rgba(35, 86, 231, 0.1);
-    margin-bottom: 1.5rem;
+    padding: 0 5rem 0px;
+    /* background-color: rgba(35, 86, 231, 0.1); */
+    /* margin-bottom: 1.5rem; */
   }
   .Header {
     font-size: 1.5rem;
@@ -79,6 +79,11 @@
   .Text {
     width: 100%;
     text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 160.1%;
+    text-align: center;
+    color: #000000;
   }
   .ButtonContainer {
     display: flex;
@@ -88,5 +93,10 @@
   .ButtonContainerMobile {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .GetStartedImage {
+    margin-bottom: -10px;
   }
 }

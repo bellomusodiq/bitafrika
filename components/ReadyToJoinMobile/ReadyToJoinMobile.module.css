@@ -44,3 +44,13 @@
 .Button {
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .Main {
+    padding: 1.5rem;
+  }
+  .Title,
+  .Text {
+    width: 100%;
+    line-height: 1.5rem;
+  }
+}

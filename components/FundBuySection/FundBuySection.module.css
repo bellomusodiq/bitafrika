@@ -81,7 +81,7 @@
   .FundBuyItem {
     width: 100%;
     margin-bottom: 1.5rem;
-    /* padding: 2rem 1.2rem 0 0rem; */
+    padding: 1.5rem;
     padding-bottom: 0;
   }
   .ButtonContainer {
@@ -98,5 +98,6 @@
   .Text {
     text-align: center;
     line-height: 1.5rem;
+    margin-top: 0;
   }
 }

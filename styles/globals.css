@@ -1,6 +1,15 @@
 @font-face {
   font-family: "Helvetica Neue";
-  src: url("/images/Helvetica.ttf");
+  src: url("/fonts/Helvetica.ttf");
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy.ttf");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/Gilroy-Bold.otf");
+  font-weight: 600;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 html,
@@ -18,6 +27,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Helvetica Neue";
 }
 @media screen and (min-width: 2500px) {
   body {
